@@ -290,8 +290,8 @@ header li a:hover {
 
   .searchbox i{
     position: absolute;
-    top: 18px;
-    left: 20px
+    top: 29px;
+    left: 20px;
   }
 
   #typeQs::placeholder{
