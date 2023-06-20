@@ -36,10 +36,6 @@
                 <img src="img/KindFood_logo.svg" alt="">
             </a>
         </div>
-     
-        <div id="bizlink">
-            <li><a href="business.html">Business</a></li>
-        </div>
 
             <div class="switches-container">
               <input type="radio" id="switchUser" name="switchName" value="User" checked="checked" />
@@ -231,13 +227,13 @@
 
         <script>
 
-            document.getElementById("switchUser").addEventListener("click", myFunction);
+            document.getElementById("switchBusiness").addEventListener("click", myFunction);
 
         function myFunction() {
-            if (document.getElementById("switchUser").checked) {
-            window.open("index.html", "_blank");
+            if (document.getElementById("switchBusiness").checked) {
+            window.open("business.html", "_new");
             } else {
-            window.open("business.html", "_blank");
+            window.open("#", "_blank");
             }
             }
         </script>
