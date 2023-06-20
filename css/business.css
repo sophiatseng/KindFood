@@ -331,46 +331,41 @@ input[type=text]{
     box-sizing: border-box;
   }
 
-  input[type=number]{
-    background-color:#BBD94E;
-    color:#025949;
-
-    width: 370px;
-    padding: 12px 20px;
-    margin: 20px 0;
-    display: inline-block;
-    border: 1px solid #EEEEE1;
-    border-radius: 20px;
-    box-sizing: border-box;
+  ::placeholder{
+    color: #BBD94E;
   }
-  
-  
-  input[type=register] {
+
+  .topregisterbtn{
+    display: inline-block;
     width: 100px;
     background-color:#025949;
     color:#EEEEE1;
     font-weight: bold;
     font-family: Verdana;
     padding: 14px 20px;
-    margin: 30px 0;
+    margin-top: 20px;
     border: none;
-    border-radius: 20px;
+    border-radius: 50px;
     cursor: pointer;
     text-align: center;
+    text-decoration: none;
+    font-size: 16px;
 
     transition-duration: 0.4s;
     cursor: pointer;
   }
 
-  ::placeholder{
-    color:#BBD94E;
-    font-family: Verdana;
-  }
-  
-  input[type=register]:hover {
+  .topregisterbtn:hover {
+    background-color:#EEEEE1;
     color:#025949;
     font-weight: bold;
-    background-color: #EEEEE1;
+  }
+
+
+  .topregistermybizbtn:hover {
+    background-color:#BBD94E;
+    color:#025949;
+    font-weight: bold;
   }
 
 
@@ -424,7 +419,37 @@ input[type=text]{
     font-weight: bold;
   }
 
-  input[type=registermybiz] {
+  .registermybizbtn{
+    display: inline-block;
+    width: 200px;
+    background-color:#025949;
+    color:#EEEEE1;
+    font-weight: bold;
+    font-family: Verdana;
+    padding: 14px 20px;
+    margin-left: 828px;
+    margin-top: 60px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+  }
+
+
+  .registermybizbtn:hover {
+    background-color:#BBD94E;
+    color:#025949;
+    font-weight: bold;
+  }
+
+
+  /* input[type=registermybiz] {
     width: 160px;
     background-color:#025949;
     color:#EEEEE1;
@@ -453,7 +478,7 @@ input[type=text]{
     color:#025949;
     font-weight: bold;
     background-color:#BBD94E;
-  }
+  } */
 
 
 /* ------------Some of our partners (logos)----------- */
@@ -739,36 +764,36 @@ input[type=text]{
     margin: 40px auto;
 }
 
-input[type=registernow] {
-    width: 120px;
+.registernowbtn{
+    display: inline-block;
+    width: 160px;
     background-color:#025949;
     color:#EEEEE1;
     font-weight: bold;
     font-family: Verdana;
     padding: 14px 20px;
-    margin: 30px 0;
+    margin-left: 828px;
+    margin-top: 60px;
     border: none;
-    border-radius: 20px;
+    border-radius: 50px;
     cursor: pointer;
     text-align: center;
+    text-decoration: none;
+    font-size: 16px;
 
     transition-duration: 0.4s;
     cursor: pointer;
 
-    display: block;
-    margin: 80px auto;
   }
 
-  ::placeholder{
-    color:#BBD94E;
-    font-family: Verdana;
-  }
-  
-  input[type=registernow]:hover {
+
+  .registernowbtn:hover {
+    background-color:#BBD94E;
     color:#025949;
     font-weight: bold;
-    background-color:#BBD94E;
   }
+
+
   
 
 /* -----------Footer------------ */
