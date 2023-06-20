@@ -79,6 +79,7 @@ body{
 header ul{
     color: #025949;
     display: flex;
+    margin-left: 120px;
 }
 
 
