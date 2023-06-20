@@ -11,7 +11,7 @@ body{
     background-color: #EEEEE1;
     font-family: 'Geologica', sans-serif;
 
-    width: 1920px;
+    width: 100%;
 }
 
 .outer{
@@ -290,14 +290,14 @@ header li a:hover {
 
   .searchbox i{
     position: absolute;
-    top: 28px;
+    top: 18px;
     left: 20px
   }
 
-  ::placeholder{
+  #typeQs::placeholder{
     color:#025949;
     font-family: Verdana;
-    padding-left: 60px;
+    padding-left: 10px;
   }
 
   /* -----Toggle Function (User/Business)----- */
@@ -761,9 +761,27 @@ input[type=text]{
 }
 
 #comments{
-    width: 446px;
-    height: 150px;
+    width: 432px;
+    height: 120px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
 
+
+    text-decoration: none;
+    border-radius: 20px;
+    background-color:#025949;
+    color:#BBD94E;
+    font-family: Verdana;
+
+    resize: none;
+}
+
+textarea::placeholder{
+    resize: none;
+    color:#BBD94E;
+    font-family: Verdana;
 }
   
   
@@ -836,4 +854,3 @@ input[type=text]{
 .socialmedia img{
 
 }
-
