@@ -37,8 +37,8 @@
           <label for="switchBusiness">Business</label>
           <div class="switch-wrapper">
             <div class="switch">
-              <div>User</div>
               <div>Business</div>
+              <div>User</div>
             </div>
           </div>
 
@@ -226,41 +226,20 @@
         </footer>
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
   </div>
-
-
-
-
-
-
-
-
-
-
-
 </div>
+            <script>
 
+            document.getElementById("switchUser").addEventListener("click", myFunction);
 
-
-
-
-
-
-
-
-
-
+        function myFunction() {
+            if (document.getElementById("switchUser").checked) {
+            window.open("index.html", "_new");
+            } else {
+            window.open("#", "_blank");
+            }
+            }
+        </script>
 
 
 
