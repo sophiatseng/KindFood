@@ -1,6 +1,6 @@
 @import url(reset.css);
 @font-face {
-    font-family: 'Geologica', sans-serif;
+    font-family: 'Geologica', 'Verdana', sans-serif;
     src: url('https://fonts.googleapis.com/css2?family=Geologica:wght@200;300&family');
 }
 
@@ -265,22 +265,22 @@ header li a:hover {
     font-size: 18px;
     text-align: center;
     margin-bottom: 20px;
-
 }
 
-#searchbox{
+.searchbox{
     width: 400px;
+    position: relative;
 
     display: block;
     margin-left: 720px;
 }
 
-#searchbox[type=text]{
+#typeQs[type=text]{
     background-color:#BBD94E;
     color:#025949;
 
     width: 480px;
-    padding: 12px 20px;
+    padding: 12px 50px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #EEEEE1;
@@ -288,9 +288,16 @@ header li a:hover {
     box-sizing: border-box;
   }
 
+  .searchbox i{
+    position: absolute;
+    top: 28px;
+    left: 20px
+  }
+
   ::placeholder{
     color:#025949;
     font-family: Verdana;
+    padding-left: 60px;
   }
 
   /* -----Toggle Function (User/Business)----- */
