@@ -41,13 +41,17 @@ body{
 }
 
 .rightOuter{
+    width: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-evenly;
 
 }
 
 .rightContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -59,18 +63,19 @@ body{
     text-align: center;
 }
 
-.rightContent a{
+#forgetpswd{
     text-align: right;
     text-decoration: none;
     color: #025949;
     margin-top: 10px;
+    font-size: 14px;
 }
 
 
 #inputboxes{
     width: 400px;
-    margin-left: 400px;
-
+    margin: 0 auto;
+    align-items: center;
     justify-content: center;
 }
 
@@ -82,7 +87,7 @@ input[type=text]{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
-    display: inline-block;
+    /* display: inline-block; */
     border: 1px solid #EEEEE1;
     border-radius: 20px;
     box-sizing: border-box;
@@ -95,14 +100,42 @@ input[type=text]{
     width: 370px;
     padding: 12px 20px;
     margin: 20px 0;
-    display: inline-block;
+    /* display: inline-block; */
     border: 1px solid #EEEEE1;
     border-radius: 20px;
     box-sizing: border-box;
   }
+
+  .loginbtn{
+    display: block;
+    margin: 20px auto 0px;
+    width: 80px;
+    background-color:#025949;
+    font-weight: bold;
+    font-family: Verdana;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    color:#EEEEE1;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+  }
+
+
+  .loginbtn:hover {
+    background-color:#BBD94E;
+    color:#025949;
+    font-weight: bold;
+  }
   
   
-  input[type=login] {
+  /* input[type=login] {
     width: 100px;
     background-color:#025949;
     color:#EEEEE1;
@@ -118,7 +151,7 @@ input[type=text]{
 
     transition-duration: 0.4s;
     cursor: pointer;
-  }
+  } */
 
   ::placeholder{
     color:#025949;
