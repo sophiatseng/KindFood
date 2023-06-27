@@ -1,6 +1,6 @@
 @import url(reset.css);
 @font-face {
-    font-family: 'Geologica', 'Verdana', sans-serif;
+    font-family: 'Geologica', 'Verdana', 'Montserrat', 'Noto Sans', sans-serif;
     src: url('https://fonts.googleapis.com/css2?family=Geologica:wght@200;300&family');
 }
 
@@ -25,31 +25,15 @@ body{
     width: 100%;
     z-index: 1;
 
-    width: 1920px;
+    width: 100%;
     height: 120px;
 }
 
 
-/* Download App button */
-/* .downloadbtn{
-    background-color: #025949;
-    border: none;
-    color:#EEEEE1;
-    padding: 10px 40px;
-    text-align: center;
-    font-family: Geologica;
-    display: inline-block;
-    font-size: 16px;
-    margin: 30px 2px;
-    border-radius: 50px;
-    margin-left: 80px;
-    height: 50%;
-    min-width: 210px;
-} */
-
+/* download button + popup message */
 
 .downloadbtn {
-    background-color:#025949; /* Green */
+    background-color:#025949;
     border: none;
     color: #EEEEE1;
     padding: 10px 40px;
@@ -60,9 +44,9 @@ body{
     font-family: Geologica;
     margin: 30px 2px;
     border-radius: 50px;
-    margin-left: 80px;
+    margin-left: 200px;
     height: 50%;
-    min-width: 210px;
+    min-width: 180px;
 
     transition-duration: 0.4s;
     cursor: pointer;
@@ -73,6 +57,52 @@ body{
     color:#025949;
     font-weight:500;
   }
+
+
+  .popup {
+    display: none;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .popcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#EEEEE1;
+    color:#025949;
+    line-height: 1.3em;
+    text-align: left;
+    font-weight: bold;
+    border-radius: 20px;
+    margin: 10% auto;
+    padding: 40px;
+    width: 30%;
+    text-align: center;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 15px 0 black;
+    animation: popup 0.5s;
+  }
+
+  .popcard img{
+    margin-left: 30px;
+  }
+  
+  @keyframes popup {
+    from {
+      opacity: 0;
+    }
+    to { 
+      opacity: 1;
+    }
+  }
+
 
 /* Nav Items */
 
@@ -242,13 +272,14 @@ header li a:hover {
 /* ------------Section 1----------- */
 
 .sectionOneOuter{
-    width: 1920px;
+    width: 100%;
     height: 660px;
     background-color:#025949;
 
     margin-bottom: 100px;
-
 }
+
+
 
 .sectionOneOuter h1{
     padding-top: 300px;
@@ -268,11 +299,11 @@ header li a:hover {
 }
 
 .searchbox{
-    width: 400px;
+    width: 470px;
     position: relative;
 
     display: block;
-    margin-left: 720px;
+    margin: 0 auto;
 }
 
 #typeQs[type=text]{
@@ -281,11 +312,11 @@ header li a:hover {
 
     width: 480px;
     padding: 12px 50px;
-    margin: 8px 0;
-    display: inline-block;
+    /* display: inline-block; */
+    margin: 8px auto;
     border: 1px solid #EEEEE1;
     border-radius: 20px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
   }
 
   .searchbox i{
@@ -434,7 +465,7 @@ header li a:hover {
 /* --------User FAQs--------- */
 
 .userFAQsOuter{
-    width: 1920px;
+    width: 100%;
 
     margin: 0 auto;
 
@@ -511,8 +542,77 @@ header li a:hover {
 
 /* -------User FAQ Questions------- */
 
+.userWrapper {
+    width: 68%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  
+  .userContainer {
+    background-color:#BBD94E;
+    color:#025949;
+    border-radius: 20px;
+    /* box-shadow: 0 5px 10px 0 rgb(0,0,0,0.25); */
+    margin: 10px 0;
+    width: 1300px;
+  }
+  
+  .userQuestion {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 80px 20px 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .userQuestion::after {
+    content: "\002B";
+    font-size: 1.6rem;
+    position: absolute;
+    right: 20px;
+    transition: 0.2s;
+  }
+  
+  .userQuestion.active::after {
+    transform: rotate(45deg);
+  }
+  
+  .userAnswerCont {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+  
+  .userAnswer {
+    line-height: 1.2rem;
+    font-size: 18px;
+    padding-left: 40px;
+    padding-right: 80px;
+    padding-bottom: 16px;
 
-.FAQsQuestions{
+  }
+  
+  .userQuestion.active + .userAnswerCont {
+  }
+  
+  @media screen and (max-width: 790px){
+    html {
+      font-size: 14px;
+    }
+    .userWrapper {
+    width: 80%;
+  }
+  }
+
+
+
+
+/* .FAQsQuestions{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -554,13 +654,13 @@ header li a:hover {
     height: 36px;
     margin-top: 12px;
 
-}
+} */
 
 
 /* ------Business FAQs Categories------ */
 
 .businessFAQsOuter{
-    width: 1920px;
+    width: 100%;
 
     margin: 0 auto;
 
@@ -640,7 +740,79 @@ header li a:hover {
 /* ----Business FAQ Questions---- */
 
 
-.bizFAQsQuestions{
+
+.bizWrapper {
+    width: 68%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  
+  .bizContainer {
+    background-color:#025949;
+    color:#BBD94E;
+    border-radius: 20px;
+    /* box-shadow: 0 5px 10px 0 rgb(0,0,0,0.25); */
+    margin: 10px 0;
+    width: 1300px;
+  }
+  
+  .bizQuestion {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 80px 20px 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .bizQuestion::after {
+    content: "\002B";
+    font-size: 1.6rem;
+    position: absolute;
+    right: 20px;
+    transition: 0.2s;
+  }
+  
+  .bizQuestion.active::after {
+    transform: rotate(45deg);
+  }
+  
+  .bizAnswerCont {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+  
+  .bizAnswer {
+    line-height: 1.2rem;
+    font-size: 18px;
+    padding-left: 40px;
+    padding-right: 80px;
+    padding-bottom: 16px;
+
+  }
+  
+  .userQuestion.active + .userAnswerCont {
+  }
+  
+  @media screen and (max-width: 790px){
+    html {
+      font-size: 14px;
+    }
+    .userWrapper {
+    width: 80%;
+  }
+  }
+
+
+
+
+
+/* .bizFAQsQuestions{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -682,7 +854,7 @@ header li a:hover {
     height: 36px;
     margin-top: 12px;
 
-}
+} */
 
 
 /* -------Have questions we didn't cover?------ */
@@ -821,7 +993,7 @@ textarea::placeholder{
     display: flex;
     justify-content: space-around;
 
-    width: 1920px;
+    width: 100%;
     height: 120px;
 
     margin-top: 100px;
