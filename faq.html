@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FAQs</title>
     <link rel="stylesheet" href="css/faq.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,9 +24,19 @@
         
         <header class="outer">
         
-            <a href="download.html"> 
-                <button class="downloadbtn">Download App</button>
-              </a> 
+       <!-- download button link to popup message -->
+    
+       <button id="popupbtn" class="downloadbtn">Download App</button>
+
+       <div class="popup">
+             <div class="popcard">
+                 <h2>Download on App Store<br>and Google Play by<br>scanning the QR code.</h2>
+                 <img src="img/qrcode.svg" alt="">
+             </div>
+         </div>
+
+
+        <!-- Nav Items  -->
         
             <nav>
              <ul>
@@ -61,17 +71,17 @@
         
         <!------------- Section 1  ------------->
 
-        <!-- <i class="fa-solid fa-magnifying-glass fa-sm" style="color: #025949;"></i> -->
+        <!-- <i class="fa-solid fa-magnifying-glass" style="color: #025949;"></i> -->
         
         <div class="sectionOneOuter">
         
-            <h1>How Can We Help You?</h1>
-            <p>We are here to answer any questions you might have.</p>
+                <h1>How Can We Help You?</h1>
+                <p>We are here to answer any questions you might have.</p>
+                <div class="searchbox">
+                    <i class="fa-solid fa-magnifying-glass fa-sm" style="color: #025949;"></i>
+                    <input type="text" id="typeQs" name="search" placeholder="">
+                </div>
 
-            <div class="searchbox">
-                <i class="fa-solid fa-magnifying-glass fa-sm" style="color: #025949;"></i>
-                <input type="text" id="typeQs" name="search" placeholder="">
-            </div>
         </div>
         
         
@@ -129,8 +139,59 @@
             </div>
         
         <!-- User FAQ Questions -->
+
+
+        <div class="userWrapper">
+  
+            <div class="userContainer">
+              <div class="userQuestion">
+                What does Kind Food do?
+              </div>
+              <div class="userAnswerCont">
+                <div class="userAnswer">
+                    Kind Food is a platform that connects partnered restaurants and shops with customers to reduce food waste. We offer discounted meals through our Foodie Bag program, allowing you to enjoy delicious food while contributing to a sustainable cause.<br><br>
+
+                </div>
+              </div>
+            </div>
+            
+              <div class="userContainer">
+              <div class="userQuestion">
+                What is Foodie Bag?
+              </div>
+              <div class="userAnswerCont">
+                <div class="userAnswer">
+                    Foodie Bag is a concept where partnered restaurants and shops pack leftover food in random assortments for customers to purchase at a discounted price. It's an exciting way to discover new flavors and help reduce food waste.<br><br> 
+                </div>
+              </div>
+            </div>
+            
+                <div class="userContainer">
+              <div class="userQuestion">
+                Do I need to register to buy Kind Food?
+              </div>
+              <div class="userAnswerCont">
+                <div class="userAnswer">
+                    Yes, registration is required to purchase Kind Food. By creating an account, you can access the full features of our platform, including ordering Foodie Bags and enjoying the benefits of our service.<br><br>
+                </div>
+              </div>
+            </div>
+           
+            <div class="userContainer">
+              <div class="userQuestion">
+                How to cancel my booking?
+              </div>
+              <div class="userAnswerCont">
+                <div class="userAnswer">
+                    To cancel your booking, simply log into your account and navigate to the "My Bookings" section. Find the specific booking you wish to cancel and follow the provided instructions to complete the cancellation process. Please note any applicable cancellation policies or deadlines that may apply.   
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
         
-            <div class="FAQsQuestions">
+            <!-- <div class="FAQsQuestions">
         
                 <ul>
                     <li>
@@ -154,7 +215,7 @@
                     </li>
                 </ul>
             </div>
-        
+         -->
         
             <!----------- Business FAQs Categories----------->
         
@@ -193,8 +254,59 @@
         
         
         <!-- Business FAQ Questions -->
-        
-            <div class="bizFAQsQuestions">
+
+
+        <div class="bizWrapper">
+  
+            <div class="bizContainer">
+              <div class="bizQuestion">
+                Why should I join Kind Food?
+              </div>
+              <div class="bizAnswerCont">
+                <div class="bizAnswer">
+                    Joining Kind Food offers several benefits. By becoming a partner, you can reduce food waste, reach a wider customer base, and contribute to a sustainable cause. Additionally, partnering with Kind Food can increase your visibility and attract socially conscious customers.<br><br>
+
+                </div>
+              </div>
+            </div>
+            
+              <div class="bizContainer">
+              <div class="bizQuestion">
+                I cannot receive order notifications. What should I do?
+              </div>
+              <div class="bizAnswerCont">
+                <div class="bizAnswer">
+                    If you are not receiving order notifications, please ensure that your contact information, especially your email address and phone number, is correctly entered in your account settings. Double-check your spam or junk folders as well. If the issue persists, please reach out to our support team for assistance.<br><br> 
+                </div>
+              </div>
+            </div>
+            
+                <div class="bizContainer">
+              <div class="bizQuestion">
+                What should I do if customers do not pick up their order?
+              </div>
+              <div class="bizAnswerCont">
+                <div class="bizAnswer">
+                    If customers do not pick up their order within the designated timeframe, kindly wait for the specified duration. If they still haven't collected their order, you may contact our support team for guidance on how to proceed. They will provide you with the necessary instructions to handle such situations.<br><br>
+                </div>
+              </div>
+            </div>
+           
+            <div class="bizContainer">
+              <div class="bizQuestion">
+                There is an error in the back office. How can I ask for help?
+              </div>
+              <div class="bizAnswerCont">
+                <div class="bizAnswer">
+                    If you encounter an error or technical issue in the back office, please reach out to our support team immediately. You can contact them through the dedicated support channel or submit a support ticket. Provide detailed information about the error you're experiencing, and our team will assist you in resolving the issue. 
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+
+            <!-- <div class="bizFAQsQuestions">
         
                 <ul>
                     <li>
@@ -217,7 +329,7 @@
                         <img src="img/lightGreenPlus.svg" alt="">
                     </li>
                 </ul>
-            </div>
+            </div> -->
         
         
             <!-- Have questions we didn't cover? -->
@@ -273,6 +385,91 @@
                     </div>
             
                 </footer>
+        
+
+                <script>
+
+                    // 彈出視窗 Popup Window //
+              
+                    let popup = document.querySelector(".popup"),
+                        button = document.querySelector(".downloadbtn");
+              
+                    button.addEventListener("click", openPop);
+              
+                    function openPop(){
+                    popup.style.display = "Block";
+                    }
+              
+                    window.addEventListener("click", closePop);
+              
+                    function closePop(e){
+                    if(e.target == popup) {
+                    popup.style.display = "none";
+                    }
+                    }
+              
+              
+                    // 切換按鈕 Switch Function //
+              
+                    document.getElementById("switchBusiness").addEventListener("click", myFunction);
+              
+                function myFunction() {
+                    if (document.getElementById("switchBusiness").checked) {
+                    window.open("business.html", "_new");
+                    } else {
+                    window.open("#", "_new");
+                    }
+                    }
+
+
+                // User FAQs Accordion
+
+                    let userQuestion = document.querySelectorAll(".userQuestion");
+
+                userQuestion.forEach(userQuestion => {
+                userQuestion.addEventListener("click", event => {
+                    const active = document.querySelector(".userQuestion.active");
+                    if(active && active !== userQuestion ) {
+                    active.classList.toggle("active");
+                    active.nextElementSibling.style.maxHeight = 0;
+                    }
+                    userQuestion.classList.toggle("active");
+                    const userAnswer = userQuestion.nextElementSibling;
+                    if(userQuestion.classList.contains("active")){
+                    userAnswer.style.maxHeight = userAnswer.scrollHeight + "px";
+                    } else {
+                    userAnswer.style.maxHeight = 0;
+                    }
+                })
+                })
+
+
+                // Business FAQs Accordion
+
+                let bizQuestion = document.querySelectorAll(".bizQuestion");
+
+            bizQuestion.forEach(bizQuestion => {
+            bizQuestion.addEventListener("click", event => {
+                const active = document.querySelector(".bizQuestion.active");
+                if(active && active !== bizQuestion ) {
+                active.classList.toggle("active");
+                active.nextElementSibling.style.maxHeight = 0;
+                }
+                bizQuestion.classList.toggle("active");
+                const bizAnswer = bizQuestion.nextElementSibling;
+                if(bizQuestion.classList.contains("active")){
+                bizAnswer.style.maxHeight = bizAnswer.scrollHeight + "px";
+                } else {
+                bizAnswer.style.maxHeight = 0;
+                }
+            })
+            })
+
+                </script>
+
+                <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
+
+                
         
 
 </body>
