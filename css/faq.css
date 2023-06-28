@@ -543,7 +543,6 @@ header li a:hover {
 /* -------User FAQ Questions------- */
 
 .userWrapper {
-    width: 68%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -558,6 +557,10 @@ header li a:hover {
     /* box-shadow: 0 5px 10px 0 rgb(0,0,0,0.25); */
     margin: 10px 0;
     width: 1300px;
+
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 16px;
   }
   
   .userQuestion {
@@ -742,7 +745,6 @@ header li a:hover {
 
 
 .bizWrapper {
-    width: 68%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -757,6 +759,10 @@ header li a:hover {
     /* box-shadow: 0 5px 10px 0 rgb(0,0,0,0.25); */
     margin: 10px 0;
     width: 1300px;
+
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 16px;
   }
   
   .bizQuestion {
