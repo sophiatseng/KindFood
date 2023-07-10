@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQs</title>
     <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/component.css">
+    <link rel="stylesheet" href="/css/faq_rwd.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@200&family" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/9d37c7ba1c.js" crossorigin="anonymous"></script>
 </head>
@@ -20,7 +24,7 @@
     
 
 
-        <!------------------- Header --------------------->
+        <!---------- Header ----------->
         
         <header class="outer">
         
@@ -51,7 +55,37 @@
                     <img src="img/KindFood_logo.svg" alt="">
                 </a>
             </div>
+
         
+            <!-- Dropdown Menu -->
+
+        <div class="menu-toggle">
+          <a class="hamburger">
+            <!-- <i class="fa-solid fa-bars" style="color: #025a49;"></i> -->
+          </a>
+        </div>
+
+        <ul class="menu">
+          <a href="index.html"><li>User</li></a>
+          <a href="business.html"><li>Business</li></a>
+          <a href="location.html"><li>Location</li></a>
+          <a href="blog.html"><li>Blog</li></a>
+          <a href="faq.html"><li>FAQs</li></a>
+          <button class="downloadbtnApp">Download App</button>
+        </ul>
+
+        <!-- 414 Download button app popup message -->
+
+        <div class="popupApp">
+          <div class="popcardApp">
+              <h2>Download on App Store<br>and Google Play by<br>scanning the QR code.</h2>
+              <img src="img/qrcode.svg" alt="">
+          </div>
+       </div>
+      
+      
+              <!-- Toggle for User and Business -->
+
                 <div class="switches-container">
                   <input type="radio" id="switchUser" name="switchName" value="User" checked="checked" />
                   <input type="radio" id="switchBusiness" name="switchName" value="Business" />
@@ -71,7 +105,6 @@
         
         <!------------- Section 1  ------------->
 
-        <!-- <i class="fa-solid fa-magnifying-glass" style="color: #025949;"></i> -->
         
         <div class="sectionOneOuter">
         
@@ -85,26 +118,42 @@
         </div>
         
         
-        <!-- Toggle Function (User/Business) -->
+        <!-- FAQ Toggle Function (User/Business) -->
         
-        <div class="toggle-container">
+        <!-- <div class="toggle-container">
                   <input type="radio" id="toggleUser" name="toggleName" value="User" checked="checked" />
                   <input type="radio" id="toggleBusiness" name="toggleName" value="Business" />
                   <label for="toggleUser">User</label>
                   <label for="toggleBusiness">Business</label>
+                  
+                  
                   <div class="toggle-wrapper">
                     <div class="toggle">
                       <div>User</div>
                       <div>Business</div>
                     </div>
                   </div>
-        
-              </div>   
+              </div>    -->
+
+              <!-- User/Business Auto-scroll link -->
+
+              <div class="autoScroll">
+                <a href="#downUser" id="userFAQs">User FAQs</a>
+                <a href="#downBusiness" id="userFAQs">Business FAQs</a>
+              </div>
+              
+              <!-- <div id="downUser">
+                <h1>You are down to User!</h1>
+              </div>
+              
+               <div id="downBusiness">
+                <h1>You are down to Business!</h1>
+              </div> -->
         
         
         <!----------- User FAQs Categories----------->
         
-        <div class="userFAQsOuter">
+        <div class="userFAQsOuter" id="downUser">
             <img id="userTitle" src="img/userTitle.svg" alt="">
         
             <div class="FAQsCategory">
@@ -113,25 +162,25 @@
                     <li>
                         <img src="img/icon01.svg" alt="">
                         <h1>App</h1>
-                        <p>Learn about its features, compatibility, and<br> how to navigate the app to make the most<br> of your experience.</p>
+                        <p>Learn about its features, compatibility, and how to navigate the app to make the most of your experience.</p>
                     </li>
         
                     <li>
                         <img src="img/icon02.svg" alt="">
                         <h1>Service</h1>
-                        <p>Discover how how orders are placed, and <br>what to expect during the pickup process. <br>We offer customer service to assist you. </p>
+                        <p>Discover how how orders are placed, and what to expect during the pickup process. We offer customer service to assist you. </p>
                     </li>
         
                     <li>
                         <img src="img/icon03.svg" alt="">
                         <h1>Purchase</h1>
-                        <p>Learn about payment methods, order <br>confirmation, refund policies, and information you may need when making a purchase.</p>
+                        <p>Learn about payment methods, order confirmation, refund policies, and information you may need when making a purchase.</p>
                     </li>
         
                     <li>
                         <img src="img/icon04.svg" alt="">
                         <h1>Benefits</h1>
-                        <p>Learn about the positive impact of reducing <br>food waste and the potential savings and <br>rewards of being a Kind Food user.</p>
+                        <p>Learn about the positive impact of reducing food waste and the potential savings and rewards of being a Kind Food user.</p>
                     </li>
         
                 </ul>
@@ -219,7 +268,7 @@
         
             <!----------- Business FAQs Categories----------->
         
-            <div class="businessFAQsOuter">
+            <div class="businessFAQsOuter" id="downBusiness">
                 <img id="businessTitle" src="img/businessTitle.svg" alt="">
             
                 <div class="bizFAQsCategory">
@@ -389,6 +438,18 @@
 
                 <script>
 
+                    // 下拉式選單 Dropdown Menu //
+                    var menu = document.querySelector(".menu-toggle");
+                    var hamburger = document.querySelector(".hamburger");
+                    var all = document.querySelector(".menu");
+
+                    menu.addEventListener("click", hamburgerMenu);
+
+                    function hamburgerMenu() {
+                      hamburger.classList.toggle("open");
+                      all.classList.toggle("menu-is-open");
+              }
+
                     // 彈出視窗 Popup Window //
               
                     let popup = document.querySelector(".popup"),
@@ -406,6 +467,25 @@
                     if(e.target == popup) {
                     popup.style.display = "none";
                     }
+                    }
+
+                    // App dropdown menu 彈出視窗 Popup Window //
+
+                    let popupApp = document.querySelector(".popupApp"),
+                        downloadbtnApp = document.querySelector(".downloadbtnApp");
+
+                    downloadbtnApp.addEventListener("click", openPopUp);
+
+                    function openPopUp(){
+                    popupApp.style.display = "Block";
+                    }
+
+                    window.addEventListener("click", closePopUp);
+
+                    function closePopUp(e){
+                    if(e.target == popupApp) {
+                    popupApp.style.display = "none";
+                    }             
                     }
               
               
