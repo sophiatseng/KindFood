@@ -6,65 +6,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/component.css">
+    <link rel="stylesheet" href="css/blog_rwd.css">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@200&family" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
 
 <body>
 
-    <!------------------- Header --------------------->
-
-    <header class="outer">
-
-
-       <!-- download button link to popup message -->
-    
-       <button id="popupbtn" class="downloadbtn">Download App</button>
-
-       <div class="popup">
-             <div class="popcard">
-                 <h2>Download on App Store<br>and Google Play by<br>scanning the QR code.</h2>
-                 <img src="img/qrcode.svg" alt="">
-             </div>
-         </div>
-
-
-        <!-- Nav Items  -->
-
-        <nav>
-         <ul>
-             <li><a href="location.html">Location</a></li>
-             <li><a href="blog.html">Blog</a></li>
-             <li><a href="faq.html">FAQs</a></li>
-         </ul>
-        </nav>
-
-        <div class="headerlogo">
-            <a href="index.html">
-              <img src="img/KindFood_logo.svg" alt="">
-            </a>
-        </div>
-
-            <div class="switches-container">
-              <input type="radio" id="switchUser" name="switchName" value="User" checked="checked" />
-              <input type="radio" id="switchBusiness" name="switchName" value="Business" />
-              <label for="switchUser">User</label>
-              <label for="switchBusiness">Business</label>
-              <div class="switch-wrapper">
-                <div class="switch">
-                  <div>User</div>
-                  <div>Business</div>
-                </div>
-              </div>
-
-          </div>
+      <!---------- Header ----------->
         
-        </div>
-    </header>
+      <header class="outer">
+        
+        <!-- download button link to popup message -->
+     
+        <button id="popupbtn" class="downloadbtn">Download App</button>
+ 
+        <div class="popup">
+              <div class="popcard">
+                  <h2>Download on App Store<br>and Google Play by<br>scanning the QR code.</h2>
+                  <img src="img/qrcode.svg" alt="">
+              </div>
+          </div>
+ 
+ 
+         <!-- Nav Items  -->
+         
+             <nav>
+              <ul>
+                  <li><a href="location.html">Location</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="faq.html">FAQs</a></li>
+              </ul>
+             </nav>
+         
+             <div class="headerlogo">
+                 <a href="index.html">
+                     <img src="img/KindFood_logo.svg" alt="">
+                 </a>
+             </div>
+ 
+         
+             <!-- Dropdown Menu -->
+ 
+         <div class="menu-toggle">
+           <a class="hamburger">
+             <!-- <i class="fa-solid fa-bars" style="color: #025a49;"></i> -->
+           </a>
+         </div>
+ 
+         <ul class="menu">
+           <a href="index.html"><li>User</li></a>
+           <a href="business.html"><li>Business</li></a>
+           <a href="location.html"><li>Location</li></a>
+           <a href="blog.html"><li>Blog</li></a>
+           <a href="faq.html"><li>FAQs</li></a>
+           <button class="downloadbtnApp">Download App</button>
+         </ul>
+
+          <!-- 414 Download button app popup message -->
+
+        <div class="popupApp">
+          <div class="popcardApp">
+              <h2>Download on App Store<br>and Google Play by<br>scanning the QR code.</h2>
+              <img src="img/qrcode.svg" alt="">
+          </div>
+      </div>
+
+
+      <!-- Toggle for User and Business -->    
+                 <div class="switches-container">
+                   <input type="radio" id="switchUser" name="switchName" value="User" checked="checked" />
+                   <input type="radio" id="switchBusiness" name="switchName" value="Business" />
+                   <label for="switchUser">User</label>
+                   <label for="switchBusiness">Business</label>
+                   <div class="switch-wrapper">
+                     <div class="switch">
+                       <div>User</div>
+                       <div>Business</div>
+                     </div>
+                   </div>
+         
+               </div>   
+             </div>
+         </header>
 
     <!------------ Section 1 (blog of the month)------------->
 
@@ -77,8 +109,8 @@
       
         <div class="content">
         <p id="tabone">Recipes</p>
-        <h2>Transforming Leftovers into <br> Delicious Meals</h2>
-        <p>Don't let leftovers go to waste! Unleash your culinary<br> creativity with these mouthwatering recipes that repurpose<br> and transform surplus ingredients into new, exciting dishes.<br> Waste not, want not!</p>
+        <h2>Transforming Leftovers into Delicious Meals</h2>
+        <p>Don't let leftovers go to waste! Unleash your culinary creativity with these mouthwatering recipes that repurpose and transform surplus ingredients into new, exciting dishes.</p>
         <button onclick="href='#';" class="readmorebtn">Read More</button>
         </div>
       </div>
@@ -178,17 +210,31 @@
   
           <div class="kindfoodlogo">
               <img src="img/KindFood_logo.svg" alt="">
-              <p>本網站為緯育TibaMe前端工程師班第102期學員專題作品，本平台僅供學習、展示之用。</p>
+              <p id="tibameFooterText">本網站為緯育TibaMe前端工程師班第102期學員專題作品，本平台僅供學習、展示之用。</p>
           </div>
   
           <div class="socialmedia">
               <img src="img/socialMedia.png" alt="">
           </div>
+          
   
       </footer>
     </div>
 
     <script>
+
+      // 下拉式選單 Dropdown Menu //
+      var menu = document.querySelector(".menu-toggle");
+      var hamburger = document.querySelector(".hamburger");
+      var all = document.querySelector(".menu");
+
+      menu.addEventListener("click", hamburgerMenu);
+
+      function hamburgerMenu() {
+        hamburger.classList.toggle("open");
+        all.classList.toggle("menu-is-open");
+      }
+
 
       // 彈出視窗 Popup Window //
 
@@ -209,6 +255,24 @@
       }
       }
 
+      // App dropdown menu 彈出視窗 Popup Window //
+
+      let popupApp = document.querySelector(".popupApp"),
+          downloadbtnApp = document.querySelector(".downloadbtnApp");
+
+      downloadbtnApp.addEventListener("click", openPopUp);
+
+      function openPopUp(){
+      popupApp.style.display = "Block";
+      }
+
+      window.addEventListener("click", closePopUp);
+
+      function closePopUp(e){
+      if(e.target == popupApp) {
+      popupApp.style.display = "none";
+      }
+      }
 
       // 切換按鈕 Switch Function //
 
