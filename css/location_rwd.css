@@ -1,0 +1,461 @@
+/* ------------1280------------- */
+
+@media screen and (max-width: 1280px){
+
+    .downloadbtn-app{
+        display: none;
+    }
+
+
+    /* -----Section 1 (Kind Food Location)----- */
+
+    #googleMap{
+        margin-top: 80px;
+        margin-left: 240px;
+        width: 800px;
+        height: 500px;
+    }
+
+
+
+    /* ------Section 2 (Popular Choices)------ */
+
+
+    .popularChoices{
+        margin-left: 50px;
+    }
+    
+    
+    .popularChoices li{
+        width: 368px;
+    }
+
+    .popularChoices img{
+        width: 368px;
+    }
+
+    .popularChoices .rating{
+        margin-right: 0;
+        width: 70%;
+    }
+
+    /* Foodie Bags Nearby */
+
+
+    .foodieBagsNearby h2{
+        font-size: 14px;
+    }
+
+    .foodieBagsNearby .frating{
+        width: 100%;
+    }
+
+    .foodieBagsNearby img{
+        width: 243px;
+        height: 135px;
+    }
+
+    .foodieBagsNearby li{
+        width: 243px;
+    }
+
+
+    /* User Comments */
+
+    .commentsContent li{
+        width: 180px;
+        height: 480px;
+    }
+
+
+    .commentsContent img{
+        margin-left: 34px;
+
+    }
+
+    .commentsContent p{
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .commentsContent h4{
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .commentsContent h5{
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+
+}
+
+
+
+/* --------768-------- */
+
+@media screen and (max-width: 768px){
+
+
+    /* Section 1 (kind food locations) */
+
+    .sectionOneOuter{
+        height: 800px;
+    }
+
+
+    .sectionOneOuter h1{
+        font-size: 40px;
+    }
+    
+    .sectionOneOuter img{
+        width: 50%;
+    }
+
+    .sectionOneOuter p{
+        font-size: 18px;
+    }
+
+    #googleMap{
+        width: 500px;
+        height: 300px;
+        margin-top: 40px;
+        margin-left: 140px;
+    }
+
+    
+    /* Section 2 (Popular Choices) */
+
+    #sectionTwoTitle{
+        height: 220px;
+    }
+
+    .popularChoices{
+        margin-left: 0px;
+    }
+    
+    .popularChoices a{
+        margin-right: 30px;
+        padding-left: 30px;
+    }
+    
+    .popularChoices li{
+        width: 188px;
+        height: 60px;
+    }
+
+    .popularChoices img{
+        width: 188px;
+    }
+
+    .popularChoices h3{
+        padding-left: 10px;
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .popularChoices p{
+        font-size: 12px;
+        padding-left: 10px;
+    }
+
+    .popularChoices .rating{
+        margin-right: 0;
+    }
+
+    .popularChoices .rating{
+        margin-right: 0;
+        width: 30%;
+    }
+
+    /* Foodie Bags Nearby */
+
+    #sectionThreeTitle{
+        height: 220px;
+    }
+
+    .foodieBagsNearby{
+        padding-left: 30px;
+    }
+
+    .foodieBagsNearby h2{
+        font-size: 14px;
+    }
+
+    .foodieBagsNearby p{
+        font-size: 12px;
+    }
+    
+    .foodieBagsNearby .frating{
+        display: none;
+    }
+    
+    .foodieBagsNearby img{
+        width: 153px;
+        height: 84px;
+    }
+    
+    .foodieBagsNearby li{
+        width: 153px;
+    }
+
+    /* Some of our partners (logos) */
+
+    #logotitle{
+        margin-top: 100px;
+        font-size: 24px;
+    }
+
+    .slide img{
+        height: 240px;
+        width: 240px;
+    }
+
+
+    /* User Comments */
+
+    #locationTitleThree{
+        height: 220px;
+    }
+
+    .commentsContent ul{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .commentsContent li{
+        margin: 80px auto;
+        width: 600px;
+        height: 260px;
+
+        position: relative;
+    }
+
+    .commentsContent img{
+        width: 129px;
+        height: 158px;
+        margin-left: 240px;
+        margin-top: -50px;
+
+        position: absolute;
+    }
+
+    .commentsContent p{
+        line-height: 1.4;
+        padding-top: 100px;
+    }
+
+    .commentsContent h4{
+        margin-top: 5px;
+    }
+
+
+
+
+    /* footer */
+
+    .footer{
+        max-width: 768px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        padding-bottom: 30px;
+      }
+
+      .appstore img{
+        display: none;
+        width: 40%;
+    }
+
+    .kindfoodlogo p{
+        font-size: 8px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .kindfoodlogo img{
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        height: 50%;
+    }
+
+    .socialmedia img{
+        display: none;
+    }
+
+} /* End of 768 */
+
+
+ /* --------414--------- */
+
+ @media screen and (max-width: 414px){
+
+    /* Section 1 (kind food locations) */
+
+    .sectionOneOuter{
+        height: 500px;
+    }
+
+    .sectionOneOuter h1{
+        font-size: 36px;
+    }
+    
+    .sectionOneOuter img{
+        width: 50%;
+    }
+
+    .sectionOneOuter p{
+        font-size: 15px;
+    }
+
+    #googleMap{
+        display: none;
+        /* width: 312px;
+        height: 112px;
+        margin-top: 40px; */
+    }
+
+
+      /* Section 2 (Popular Choices) */
+
+      #sectionTwoTitle{
+        height: 180px;
+    }
+
+    .popularChoices{
+        display: block;
+    }
+    
+    .popularChoices a{
+        margin-left: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .popularChoices li{
+        width: 270px;
+        height: 72px;
+    }
+
+    .popularChoices img{
+        width: 270px;
+    }
+
+    .popularChoices h3{
+        padding-left: 20px;
+        font-size: 16px;
+        margin-right: 40px;
+    }
+
+    .popularChoices p{
+        font-size: 12px;
+        padding-left: 20px;
+    }
+
+    .popularChoices .rating{
+        margin-right: -20px;
+    }
+
+    .popularChoices .rating{
+        width: 30%;
+    }
+
+
+        /* Foodie Bags Nearby */
+
+        #sectionThreeTitle{
+            height: 180px;
+        }
+    
+        .foodieBagsNearby{
+            display: block;
+            padding-left: 0px;
+        }
+    
+        .foodieBagsNearby h2{
+            padding-top: 10px;
+            font-size: 14px;
+        }
+    
+        .foodieBagsNearby p{
+            font-size: 12px;
+        }
+        
+        .foodieBagsNearby .frating{
+            display: none;
+        }
+        
+        .foodieBagsNearby img{
+            width: 304px;
+            height: 169px;
+            margin-left: 54px;
+        }
+
+        .foodieBagsNearby ul{
+
+        }
+        
+        .foodieBagsNearby li{
+            width: 304px;
+            height: 52px;
+            margin-left: 54px;
+            margin-bottom: 10px;
+        }
+
+
+
+        /* Some of our partners (logo slides) */
+
+        #logotitle{
+            margin-top: 100px;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .slide img{
+            width: 180px;
+            height: 180px;
+        }
+
+        .slider .slide{
+            margin-right: 0;
+        }
+
+
+
+        /* User comments */
+
+            
+        #locationTitleThree{
+            height: 160px;
+        }
+
+        .commentsContent li{
+            width: 180px;
+            height: 460px;
+            margin-bottom: 60px;
+            margin-top: 10px;
+        }
+
+        .commentsContent img{
+            width: 103px;
+            height: 128px;
+            margin-left: 0;
+
+            margin-left: 56px;
+            margin-top: -30px;
+        }
+
+        input[type=downloadbtn]{
+            margin-top: 10px;
+
+        }
+
+ } /* End of 414 */
+ 
+
+
+

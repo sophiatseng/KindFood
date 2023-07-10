@@ -1,0 +1,763 @@
+/* ------------1280------------- */
+
+@media screen and (max-width: 1280px){
+
+    /* download button + popup message */
+
+    
+    .downloadbtn{
+        margin-left: 30px;
+    }
+
+    .downloadbtn-app{
+        display: none;
+    }
+
+    .popcard{
+        font-size: 1rem;
+    }
+
+
+    .switches-container{
+        display: none;
+    }
+
+    header ul{
+        display: none;
+    }
+
+    header li{
+        text-align: center;
+    }
+
+    header li:nth-child(3) {
+        text-align: center;
+    }
+
+    .outer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 0 0 0;
+    }
+
+    .kindFoodLogo{
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .headerlogo{
+        display: block;
+        margin: 0 auto;
+
+        margin-left: 240px;
+        margin-bottom: 10px;
+    }
+
+    /* 下拉式選單 */
+
+    .menu-toggle{
+        display: block;
+        font-size: 44px;
+        margin-right: 40px;
+        cursor: pointer;
+        width: var(--size);
+        height: var(--size);
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+        position:relative;
+        z-index:6;
+    }
+
+    .hamburger {
+        width: 40px;
+        height: 4px;
+        background:#025949;
+        border-radius: 50px;
+        display: block;
+        position: relative;
+        transition: all ease-in-out 0.3s;
+    }
+
+    .hamburger::after, .hamburger::before {
+	content: " ";
+	position: absolute;
+	width: 40px;
+	height: 4px;
+    background:#025949;
+    border-radius: 50px;
+	transition: all ease-in-out 0.3s;
+    }
+
+    .hamburger::before {
+        bottom: 0.5em;
+    }
+    .hamburger::after {
+        top: 0.5em;
+    }
+
+    .open {
+        transform: rotate(45deg);
+    }
+
+    .open::before {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.3s, opacity 0.3s;
+    }
+    .open::after {
+        transform: rotate(-90deg);
+        top: 0;
+    }
+    
+    .menu {
+        display: flex;
+        flex-direction: column;
+        background:#BBD94E;
+        padding: 1em;
+        margin: 2em 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.3s, opacity 0.3s;
+        margin-top: -2em;
+        transition: all ease-in-out 0.3s;
+        width:50%;
+    }
+
+    .menu-is-open {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 1.8em;
+    }
+
+    .menu a{
+        text-decoration:none;
+        color:#025949;
+        font-size: 1.1em;
+        line-height: 3;
+        text-align: center;
+        margin-right: -80px;
+    }
+
+
+    /* .menu-toggle i:hover ~ ul{
+        display: flex;
+    } */
+
+    
+    .menu{
+        /* display: none; */
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 61px;
+        background-color:#BBD94E;
+        width: 100%;
+    }
+
+    .menu li{
+        text-align: center;
+        line-height: 3.6;
+        font-size: 24px;
+    }
+
+
+
+    /* Section One */
+
+    .sectionOneOuter img{
+        width: 60%;
+        height: 60%;
+        margin-left: 40px;
+    }
+
+    .content{
+        width: 600px;
+        height: 100%;
+        margin-right: 40px;
+    }
+
+    .sectionOneTitle{
+        width: 50%;
+    }
+
+    .sectionTwoTitle{
+        width: 50%;
+    }
+
+
+    .sectionOneOuter h2{
+        font-size: 26px;
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-top: 20px;
+    }
+
+    .sectionOneOuter p{
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    #tabone{
+        margin-top: 60px;
+        margin-left: 60px;
+    }
+
+    .sectionOneOuter .readmorebtn{
+        width: 160px;
+        height: 40px;
+        margin-left: 60px;
+        margin-top: 28px;
+        font-size: 14px;        
+    }
+
+    .blogposts li{
+        /* width: 40%; */
+        /* width: 560px;
+        height: 700px; */
+    }
+
+    .blogposts h2{
+        font-size: 20px;
+        line-height: 1.4em;
+    }
+
+    .blogposts p{
+        margin-top: 28px;
+    }
+
+    .blogposts li{
+        margin: 0 50px 60px;
+    }
+
+    .sectionThreeOuter{
+        width: 60%;
+    }
+
+}
+
+
+
+
+
+/* ------------768------------- */
+
+@media screen and (max-width: 768px) {
+
+    body{
+        width: 100%;
+    }
+
+    /* header */
+
+    .outer{
+        background-color: #BBD94E;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+
+        width: 100vw;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    .downloadbtn{
+        background-color:#025949;
+        border: none;
+        color: #EEEEE1;
+        padding: 0 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        font-family: Geologica;
+        border-radius: 50px;
+        margin: 24px 30px;
+
+        height: 32%;
+        min-width: 140px;
+    
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+
+    .switches-container{
+        display: none;
+    }
+
+        /* header */
+        .outer{
+            width: 100vw;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    
+        .headerlogo img{
+            display: block;
+            margin: 0 auto;
+            width: 70%;
+        }
+    
+        .downloadbtn{
+            font-size: 14px;
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+        }
+
+
+    /* Nav Items */
+
+    header ul{
+        color: #025949;
+        display: none; /*先讓導覽列不顯示*/
+    }
+
+
+    header a{
+        text-decoration: none;
+        color:#025949;
+    }
+
+    header li a:hover {
+        color: #025949;
+        text-decoration: underline;
+    }
+
+    .headerlogo{
+        margin: 0 auto;
+        margin-left: 64px;
+        margin-bottom: 10px;
+    }
+
+    header li{
+        margin: 12px auto;
+        font-size: 18px;
+
+    }
+
+    .menu a{
+        margin: 0 auto;
+    }
+
+    .menu a li{
+        margin-left: 0;
+    }
+
+    .menu a li:hover{
+        color: #025949;
+        text-decoration: underline;
+
+    }
+
+
+    /* Section 1 */
+
+    .sectionOneTitle{
+        width: 70%;
+        height: 70%;
+    }
+
+    .sectionOneOuter img{
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        height: 80%;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .sectionOneInner{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content{
+        border-radius: 0px 0px 20px 20px;
+        margin: 0 auto;
+        margin-top: -20px;
+        width: 80%;
+        height: 100%;
+    }
+
+    .sectionOneOuter h2{
+        font-size: 20px;
+        font-weight: bold;
+        color: #025949;
+    
+        margin-top: 20px;
+        margin-left: 60px;
+        line-height: 1.4em;
+    }
+    
+    #tabone{
+        background-color:#025949;
+        color:#EEEEE1;
+        font-size: 12px;
+        text-align: center;
+        border-radius: 50px;
+        width: 104px;
+        height: 28px;
+        line-height: 2.2em;
+    
+        margin-top: 20px;
+    }
+
+    .sectionOneOuter p{
+        font-size: 14px;
+        color: #025949;
+        
+        margin-top: 10px;
+        margin-left: 60px;
+        line-height: 1.5em;
+    }
+
+    .sectionOneOuter .readmorebtn{
+        background-color: #025949;
+        border: none;
+        color:#EEEEE1;
+        padding: 10px 40px;
+        text-align: center;
+        font-family: Geologica;
+        font-weight: 500;
+        display: block;
+        margin: 20px auto;
+        font-size: 14px;
+        border-radius: 50px;
+        height: 40px;
+        min-width: 110px;
+    
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+
+
+    /* ------Section 2------- */
+
+    .sectionTwoTitle{
+        width: 70%;
+        height: 70%;
+    }
+
+    .blogposts h2{
+        font-size: 20px;
+        line-height: 1.4em;
+    }
+
+
+    /* ----Section 3 (newsletters) ---*/
+
+    .sectionThreeOuter{
+        width: 50%;
+        height: 50%;
+    }
+
+    .sectionThreeOuter img{
+        display: none;
+    }
+
+    .sectionThreeOuter p{
+        line-height: 1.4em;
+    }
+
+    /* footer */
+
+    .footer{
+        max-width: 768px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        padding-bottom: 30px;
+      }
+
+      .appstore img{
+        display: none;
+        width: 40%;
+    }
+
+    .kindfoodlogo p{
+        font-size: 8px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .kindfoodlogo img{
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        height: 50%;
+    }
+
+    .socialmedia img{
+        display: none;
+    }
+
+} /* End of 768 */
+
+
+
+
+
+
+
+
+/* ------------414------------- */
+
+@media screen and (max-width: 414px) {
+
+
+    body{
+        width: 100%;
+    }
+    
+
+    /* header */
+
+    .outer{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .downloadbtn{
+        display: none;
+    }
+
+    .downloadbtn-app{
+        background-color:#025949;
+        border: none;
+        color: #EEEEE1;
+        padding: 0 12px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 auto;
+        font-size: 16px;
+        font-family: Geologica;
+        border-radius: 50px;
+        line-height: 2.5em;
+        margin-top: 20px;
+        margin-bottom: 22px;
+
+        width: 200px;
+    
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+
+    .downloadbtn-app:hover {
+        background-color: #EEEEE1;
+        color:#025949;
+      }
+
+    /* popup */
+
+    .popup {
+        display: none;
+        position: fixed;
+        z-index: 4;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.4);
+      }
+      
+      .popcard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:#EEEEE1;
+        color:#025949;
+        line-height: 1.3em;
+        text-align: left;
+        font-weight: bold;
+        border-radius: 20px;
+        margin: 10% auto;
+        padding: 40px;
+        width: 30%;
+        text-align: center;
+        font-size: 1.2rem;
+        box-shadow: 0 2px 15px 0 black;
+        animation: popup 0.5s;
+      }
+    
+      .popcard img{
+        margin-left: 30px;
+      }
+      
+      @keyframes popup {
+        from {
+          opacity: 0;
+        }
+        to { 
+          opacity: 1;
+        }
+      }
+
+    /* dropdown menu */
+
+    .menu-toggle{
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .headerlogo{
+        margin: 0 auto;
+        margin-left: 56px;
+        margin-bottom: 14px;
+        width: 54%;
+
+        /* width: 60%; */
+
+        /* padding-right: 20px; */
+    }
+
+    header li{
+        margin: 10px auto;
+        font-size: 28px;
+    }
+
+    header li:nth-child(1){
+        margin-left: 0;
+    } 
+
+    .hamburger::after, .hamburger::before{
+        width: 30px;
+    }
+
+    .hamburger{
+        width: 30px;
+    }
+
+    .menu a{
+        margin: 0 auto;
+    }
+
+
+    /* Section One */
+
+    .sectionOneTitle{
+        width: 90%;
+    }
+
+    #tabone{
+        margin-left: 30px;
+        width: 80px;
+    }
+
+    .sectionOneOuter{
+        height: 560px;
+    }
+
+    .sectionOneOuter h2{
+        font-size: 20px;
+        margin: 10px 30px;
+        line-height: 1.4em;
+    }
+
+    .sectionOneOuter p{
+        margin: 10px 30px;
+    }
+
+    .content{
+        height: 320px;
+    }
+
+    /* Section Two */
+
+    .sectionTwoTitle{
+        width: 90%;
+    }
+
+    .blogposts p{
+        margin-left: 30px;
+
+    }
+
+    .blogposts h2{
+        font-size: 16px;
+        margin-left: 30px;
+        margin-right: 20px;
+    }
+
+    .blogposts li{
+        margin: 0 20px 40px;
+    }
+
+    /* Section 3 (newsletters) */
+
+    .sectionThreeOuter{
+        padding: 40px 40px;
+        width: 70%;
+
+    }
+
+    .sectionThreeOuter h1{
+        font-size: 24px;
+        line-height: 1.2em;
+    }
+
+    .sectionThreeOuter h2{
+        font-size: 16px;
+    }
+
+    #inputboxes{
+
+    }
+    
+    .sectionThreeOuter form{
+        width: 290px;
+    }
+
+    input[type=text]{
+        width: 290px;
+    }
+
+    input[type=submit]{
+        width: 290px;
+        height: 42px;
+    }
+
+    ::placeholder{
+        font-size: 12px;
+      }
+
+    .sectionThreeOuter p{
+        font-size: 14px;
+        max-width: 392px;
+        width: 100%;
+        
+    }
+
+    /* footer */
+
+    .footer{
+        width: 100%;
+        bottom: 0;
+        height: 50px;
+    }
+
+    .kindfoodlogo img{
+        width: 36%;
+    }
+
+
+    #tibameFooterText{
+        font-size: 10px;
+        margin-left: 44px;
+        margin-right: 44px;
+        margin-top: 4px;
+        line-height: 1.6em;
+    }
+
+} /* End of 414 */

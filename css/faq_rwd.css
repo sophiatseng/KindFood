@@ -1,0 +1,871 @@
+/* ------------1280------------- */
+
+@media screen and (max-width: 1280px){
+
+    /* download button + popup message */
+
+    
+    .downloadbtn{
+        margin-left: 30px;
+    }
+
+    .downloadbtn-app{
+        display: none;
+    }
+
+    .popcard{
+        font-size: 1rem;
+    }
+
+
+    .switches-container{
+        display: none;
+    }
+
+    header ul{
+        display: none;
+    }
+
+    header li{
+        text-align: center;
+    }
+
+    header li:nth-child(3) {
+        text-align: center;
+    }
+
+    .outer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 0 0 0;
+    }
+
+    .kindFoodLogo{
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .headerlogo{
+        display: block;
+        margin: 0 auto;
+
+        margin-left: 234px;
+        margin-bottom: 10px;
+    }
+
+    /* 下拉式選單 */
+
+    .menu-toggle{
+        display: block;
+        font-size: 44px;
+        margin-right: 40px;
+        cursor: pointer;
+        width: var(--size);
+        height: var(--size);
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+        position:relative;
+        z-index:6;
+    }
+
+    .hamburger {
+        width: 40px;
+        height: 4px;
+        background:#025949;
+        border-radius: 50px;
+        display: block;
+        position: relative;
+        transition: all ease-in-out 0.3s;
+    }
+
+    .hamburger::after, .hamburger::before {
+	content: " ";
+	position: absolute;
+	width: 40px;
+	height: 4px;
+    background:#025949;
+    border-radius: 50px;
+	transition: all ease-in-out 0.3s;
+    }
+
+    .hamburger::before {
+        bottom: 0.5em;
+    }
+    .hamburger::after {
+        top: 0.5em;
+    }
+
+    .open {
+        transform: rotate(45deg);
+    }
+
+    .open::before {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.3s, opacity 0.3s;
+    }
+    .open::after {
+        transform: rotate(-90deg);
+        top: 0;
+    }
+    
+    .menu {
+        display: flex;
+        flex-direction: column;
+        background:#BBD94E;
+        padding: 1em;
+        margin: 2em 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.3s, opacity 0.3s;
+        margin-top: -2em;
+        transition: all ease-in-out 0.3s;
+        width:50%;
+    }
+
+    .menu-is-open {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 1.8em;
+    }
+
+    .menu a{
+        text-decoration:none;
+        color:#025949;
+        font-size: 1.1em;
+        line-height: 3;
+        text-align: center;
+        margin-right: -80px;
+    }
+
+
+    /* .menu-toggle i:hover ~ ul{
+        display: flex;
+    } */
+
+    
+    .menu{
+        /* display: none; */
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 61px;
+        background-color:#BBD94E;
+        width: 100%;
+    }
+
+    .menu li{
+        text-align: center;
+        line-height: 3.6;
+        font-size: 24px;
+    }
+
+    /* User FAQs */
+
+    .userWrapper{
+        margin: 0 auto;
+        /* margin-left: 280px; */
+        max-width: 700px;
+    }
+
+    /* Business FAQs */
+
+    .bizWrapper{
+        margin: 0 auto;
+        /* margin-left: 295px; */
+        max-width: 660px;
+    }
+
+    .bizQuestion{
+        line-height: 1.4em;
+    }
+
+    .FAQsCategory p{
+        line-height: 1.4;
+    }
+
+}
+
+
+/* ------------768------------- */
+
+@media screen and (max-width: 768px){
+
+
+    body{
+        width: 100%;
+    }
+
+    /* header */
+
+    .outer{
+        background-color: #BBD94E;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+
+        width: 100vw;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    .downloadbtn{
+        background-color:#025949;
+        border: none;
+        color: #EEEEE1;
+        padding: 0 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        font-family: Geologica;
+        border-radius: 50px;
+        margin: 24px 30px;
+
+        height: 32%;
+        min-width: 140px;
+    
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+
+    .switches-container{
+        display: none;
+    }
+
+        /* header */
+        .outer{
+            width: 100vw;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    
+        .headerlogo img{
+            display: block;
+            margin: 0 auto;
+            width: 70%;
+        }
+    
+        .downloadbtn{
+            font-size: 14px;
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+        }
+
+
+    /* Nav Items */
+
+    header ul{
+        color: #025949;
+        display: none; /*先讓導覽列不顯示*/
+    }
+
+
+    header a{
+        text-decoration: none;
+        color:#025949;
+    }
+
+    header li a:hover {
+        color: #025949;
+        text-decoration: underline;
+    }
+
+    .headerlogo{
+        margin: 0 auto;
+        margin-left: 64px;
+        margin-bottom: 10px;
+    }
+
+    header li{
+        margin: 12px auto;
+        font-size: 18px;
+
+    }
+
+    .menu a{
+        margin: 0 auto;
+    }
+
+
+    /* Auto scroll for User and Business FAQs */
+
+    .autoScroll a{
+        text-decoration: none;
+        color:#025949;
+        background-color:#BBD94E;
+        border-radius: 50px;
+        /* padding: 20px 40px; */
+    
+        font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+       }
+       
+       #userFAQs{
+        display: inline-block;
+        width: 180px;
+        height: 40px;
+        padding-top: 20px;
+       }
+    
+       #bizFAQs{
+        display: inline-block;
+        width: 180px;
+        height: 40px;
+        padding-top: 20px;
+       }
+
+
+
+    /* Section 1 */
+
+    .sectionOneOuter h1{
+        font-size: 40px;
+    }
+
+    /* user-business Toggle */
+
+    .toggle-container{
+        height: 70%;
+    }
+
+    .toggle {
+        font-size: 16px;
+        height: 100%;
+    }
+
+    .userContainer{
+        width: 95%;
+    }
+
+    
+    .bizContainer{
+        width: 95%;
+    }
+
+
+
+
+    /* User FAQs */
+
+    .FAQsCategory ul{
+        margin-left: 0px;
+        margin-bottom: 10px;
+
+    }
+
+
+    #userTitle{
+        width: 50%;
+    }
+
+    .userWrapper{
+        margin: 0 auto;
+    }
+
+    .FAQsCategory li{
+        margin: 10px auto;
+    }
+
+    .FAQsCategory h1{
+        font-size: 30px;
+    }
+
+    .userWrapper{
+        margin: 0px auto;
+        width: 88%;
+    }
+
+    .userAnswer{
+        line-height: 1.6;
+    }
+
+
+
+    /* Business FAQs */
+
+
+    #businessTitle{
+        width: 50%;
+    }
+
+    .bizWrapper{
+        margin: 0 auto;
+    }
+
+    .bizFAQsCategory li{
+        margin: 10px auto;
+    }
+
+    .bizCategory h1{
+        font-size: 30px;
+    }
+
+    .bizFAQsCategory p{
+        line-height: 1.4;
+    }
+
+    .bizWrapper{
+        margin: 0px auto;
+        width: 88%;
+    }
+
+    .bizAnswer{
+        line-height: 1.6;
+    }
+
+    /* Have Questions? */
+
+    #qatitle{
+        width: 80%;
+    }
+
+    .qaOuter h3{
+        font-size: 18px;
+        padding-left: 30px;
+        padding-right: 30px;
+
+    }
+    
+
+
+        /* footer */
+
+        .footer{
+            max-width: 768px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+            padding-bottom: 30px;
+          }
+    
+          .appstore img{
+            display: none;
+            width: 40%;
+        }
+    
+        .kindfoodlogo p{
+            font-size: 8px;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+    
+        .kindfoodlogo img{
+            display: block;
+            margin: 0 auto;
+            width: 50%;
+            height: 50%;
+        }
+    
+        .socialmedia img{
+            display: none;
+        }
+
+}
+
+
+/* ------------414------------- */
+
+@media screen and (max-width: 414px){
+
+
+    body{
+        max-width: 414px;
+        width: 100%;
+    }
+    
+
+    /* header */
+
+    .outer{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .downloadbtn{
+        display: none;
+    }
+
+    .downloadbtn-app{
+        background-color:#025949;
+        border: none;
+        color: #EEEEE1;
+        padding: 0 12px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 auto;
+        font-size: 16px;
+        font-family: Geologica;
+        border-radius: 50px;
+        line-height: 2.5em;
+        margin-top: 20px;
+        margin-bottom: 22px;
+
+        width: 200px;
+    
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+
+    .downloadbtn-app:hover {
+        background-color: #EEEEE1;
+        color:#025949;
+      }
+
+    /* popup */
+
+    .popup {
+        display: none;
+        position: fixed;
+        z-index: 4;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.4);
+      }
+      
+      .popcard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:#EEEEE1;
+        color:#025949;
+        line-height: 1.3em;
+        text-align: left;
+        font-weight: bold;
+        border-radius: 20px;
+        margin: 10% auto;
+        padding: 40px;
+        width: 30%;
+        text-align: center;
+        font-size: 1.2rem;
+        box-shadow: 0 2px 15px 0 black;
+        animation: popup 0.5s;
+      }
+    
+      .popcard img{
+        margin-left: 30px;
+      }
+      
+      @keyframes popup {
+        from {
+          opacity: 0;
+        }
+        to { 
+          opacity: 1;
+        }
+      }
+
+    /* dropdown menu */
+
+    .menu-toggle{
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .headerlogo{
+        margin: 0 auto;
+        margin-left: 56px;
+        margin-bottom: 14px;
+        width: 54%;
+
+        /* width: 60%; */
+
+        /* padding-right: 20px; */
+    }
+
+    header li{
+        margin: 10px auto;
+        font-size: 28px;
+    }
+
+    header li:nth-child(1){
+        margin-left: 0;
+    } 
+
+    .hamburger::after, .hamburger::before{
+        width: 30px;
+    }
+
+    .hamburger{
+        width: 30px;
+    }
+
+    .menu a{
+        margin: 0 auto;
+    }
+
+    /* Auto Scroll for User and Business */
+
+    .autoScroll a{
+        text-decoration: none;
+        color:#025949;
+        background-color:#BBD94E;
+        border-radius: 50px;
+        /* padding: 20px 40px; */
+    
+        font-weight: bold;
+        font-size: 18px;
+        cursor: pointer;
+       }
+       
+       #userFAQs{
+        display: inline-block;
+        width: 160px;
+        height: 30px;
+        padding-top: 14px;
+       }
+    
+       #bizFAQs{
+        display: inline-block;
+        width: 160px;
+        height: 30px;
+        padding-top: 14px;
+       }
+
+
+
+    /* Section 1 */
+
+    .sectionOneOuter{
+        height: 520px;
+    }
+
+    .sectionOneOuter h1{
+        padding-top: 260px;
+        font-size: 32px;
+    }
+
+    .sectionOneOuter p{
+        font-size: 14px;
+    }
+    
+    
+    .searchbox{
+        width: 400px;
+        margin: 0 auto;
+    }
+    
+    #typeQs[type=text]{
+        width: 360px;
+        margin-left: 20px;
+    }
+
+    .searchbox i{
+        left: 36px;
+    }
+
+    
+
+    /* Toggle */
+
+    .toggle-container label{
+        font-size: 14px;
+    }
+
+    .toggle div{
+        font-size: 14px;
+    }
+
+    
+
+    /* User FAQs */
+
+    #userTitle{
+        width: 80%;
+    }
+
+    .FAQsCategory li{
+        width: 360px;
+        height: 200px;
+    }
+
+    .FAQsCategory img{
+        width: 40px;
+        height: 40px;
+        margin-top: 50px;
+        padding-left: 30px;
+
+    }
+
+    .FAQsCategory h1{
+        font-size: 24px;
+        padding-top: 0;
+        margin-top: 36px;
+        padding-left: 100px;
+    }
+
+    .FAQsCategory p{
+        font-size: 15px;
+        padding-left: 100px;
+    }
+
+    /* User Questions */
+
+    .userWrapper{
+        margin: 0 auto;
+        width: 400px;
+    }
+
+    .userQuestion{
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .userAnswer{
+        font-size: 16px;
+    }
+
+
+
+    /* Business FAQs */
+
+    #businessTitle{
+        width: 80%;
+    }
+
+    .bizFAQsCategory li{
+        width: 360px;
+        height: 200px;
+    }
+
+    .bizFAQsCategory img{
+        width: 40px;
+        height: 40px;
+        margin-top: 50px;
+        padding-left: 30px;
+
+    }
+
+    .bizFAQsCategory h1{
+        font-size: 24px;
+        padding-top: 0;
+        margin-top: 36px;
+        padding-left: 100px;
+    }
+
+    .bizFAQsCategory p{
+        font-size: 15px;
+        padding-left: 100px;
+    }
+
+    /* User Questions */
+
+    #qatitle{
+        display: none;
+
+    }
+    
+    .bizWrapper{
+        width: 400px;
+    }
+
+    .bizQuestion{
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .bizAnswer{
+        font-size: 16px;
+    }
+
+
+    /* Have questions? */
+
+    .qaContents{
+        padding-left: 0;
+    }
+    
+    .qaContentOuter{
+        width: 388px;
+        height: 440px;
+    }
+
+    .qaOuter h3{
+        padding-top: 50px;
+        padding-left: 30px;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .qaContents{
+        padding-left: 20px;
+    }
+
+    input[type=text]{
+        width: 140px;
+        margin: 6px 0px;
+    }
+
+    input[type=text]:nth-child(1){
+        margin-left: 30px;
+    }
+
+    input[type=text]:nth-child(3){
+        margin-left: 30px;
+    }
+
+    #email{
+        width: 288px;
+    }
+
+    #comments{
+        width: 264px;
+        height: 70px;
+        margin-left: 30px;
+    }
+
+    input[type=submit]{
+        width: 290px;
+        margin-left: 30px;
+        height: 40px;
+        margin-top: 10px;
+    }
+
+    .qaContents .form-inline{
+        margin-left: 0%;
+        margin-right: 10%;
+    }
+
+
+    /* footer */
+
+    .footer{
+        width: 100%;
+        bottom: 0;
+        height: 50px;
+    }
+
+    .kindfoodlogo img{
+        width: 36%;
+        margin-top: 8px;
+    }
+
+    .kindfoodlogo p{
+        font-size: 8px;
+        margin: 0 auto;
+        line-height: 1.5;
+        margin-left: 48px;
+        margin-right: 48px;
+    }
+
+
+    #tibameFooterText{
+    }
+
+
+} /*End of 414 */
+

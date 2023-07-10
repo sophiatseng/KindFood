@@ -1,0 +1,1515 @@
+    /* ------------1280------------- */
+
+    @media screen and (max-width: 1280px){
+
+
+        body{
+            max-width: 1280px;
+            width: 100%;
+        }
+
+    /* section 1 background animation */
+
+  .cristalBall{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    /* position: absolute; */
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    z-index:99999;
+  }
+  
+  .background{
+    background-color:#EEEEE1;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+  }
+  
+  .circle{
+    background-color:#E3EFB8;
+    height:100px;
+    border-radius:50%;
+    width: 100px;
+    margin: auto;
+    position: absolute;
+    top: 60%; left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .circle1{
+    background-color:#cfe483;
+    height:1000px;
+    border-radius:50%;
+    width: 1000px;
+    margin: auto;
+    position: absolute;
+    top: -120%; left: 50%;
+    transform: translate(-50%,-50%);
+    animation: pulse3 10s linear infinite;
+  }
+  
+  .circle2{
+    background-color:#BBD94E;
+    height: 900px;
+    border-radius:50%;
+    width: 900px;
+    margin: auto;
+    position: absolute;
+    top: 50%; left: 50%;
+    color:white;
+    font-size:40px;
+    transform: translate(-50%,-50%);
+    animation: pulse 4s linear infinite;
+  }
+  
+  /* .circle3{
+    background-color:#ee88fd;
+    height:500px;
+    border-radius:50%;
+    width: 500px;
+    margin: auto;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    font-size:50px;
+    animation: pulse2 3s linear infinite;
+  } */
+  
+  .star{
+    transform: translate(350px,50px);
+    opacity:.6;
+  }
+  
+  @keyframes pulse{
+    0%{width:700px;height:700px;}
+    50%{width:750px;height:750px;}
+    100%{width:700px;height:700px;}
+  }
+  
+  @keyframes pulse2{
+    0%{width:500px;height:500px;}
+    50%{width:550px;height:550px;}
+    100%{width:500px;height:500px;}
+  }
+  
+  @keyframes pulse3{
+    0%{width:1000px;height:1000px;}
+    50%{width:1050px;height:1050px;}
+    100%{width:1000px;height:1000px;}
+  }
+        
+        /* download button + popup message */
+
+        .downloadbtn{
+            margin-left: 30px;
+        }
+
+        .popcard{
+            font-size: 1rem;
+        }
+
+
+        .switches-container{
+            display: none;
+        }
+
+        header ul{
+            display: none;
+        }
+
+        header li{
+            text-align: center;
+        }
+
+        header li:nth-child(3) {
+            text-align: center;
+        }
+
+        .outer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0 0 0 0;
+        }
+
+        .kindFoodLogo{
+            display: flex;
+            margin: 0 auto;
+        }
+
+        .headerlogo{
+            display: block;
+            margin: 0 auto;
+    
+            margin-left: 258px;
+            margin-bottom: 10px;
+        }
+
+        /* 下拉式選單 */
+
+        .menu-toggle{
+            display: block;
+            font-size: 44px;
+            margin-right: 40px;
+            cursor: pointer;
+            width: var(--size);
+            height: var(--size);
+            display: grid;
+            place-items: center;
+            cursor: pointer;
+            position:relative;
+            z-index:6;
+        }
+
+        .hamburger {
+            width: 40px;
+            height: 4px;
+            background:#025949;
+            border-radius: 50px;
+            display: block;
+            position: relative;
+            transition: all ease-in-out 0.3s;
+        }
+
+        .hamburger::after, .hamburger::before {
+        content: " ";
+        position: absolute;
+        width: 40px;
+        height: 4px;
+        background:#025949;
+        border-radius: 50px;
+        transition: all ease-in-out 0.3s;
+        }
+
+        .hamburger::before {
+            bottom: 0.5em;
+        }
+        .hamburger::after {
+            top: 0.5em;
+        }
+
+        .open {
+            transform: rotate(45deg);
+        }
+
+        .open::before {
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0.3s, opacity 0.3s;
+        }
+        .open::after {
+            transform: rotate(-90deg);
+            top: 0;
+        }
+        
+        .menu {
+            display: flex;
+            flex-direction: column;
+            background:#BBD94E;
+            padding: 1em;
+            margin: 2em 0;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0.3s, opacity 0.3s;
+            margin-top: -2em;
+            transition: all ease-in-out 0.3s;
+            width:50%;
+        }
+
+        .menu-is-open {
+            visibility: visible;
+            opacity: 1;
+            margin-top: 1.8em;
+        }
+
+        .menu a{
+            text-decoration:none;
+            color:#025949;
+            font-size: 1.1em;
+            line-height: 3;
+            text-align: center;
+            margin-right: -80px;
+        }
+
+        .downloadbtnApp{
+            display: none;
+        }
+
+
+        /* .menu-toggle i:hover ~ ul{
+            display: flex;
+        } */
+
+        
+        .menu{
+            /* display: none; */
+            flex-direction: column;
+            position: absolute;
+            right: 0;
+            top: 60px;
+            background-color:#BBD94E;
+            width: 100%;
+        }
+
+        .menu li{
+            text-align: center;
+            font-size: 24px;
+            line-height: 3.6;
+        }
+
+
+        /* Section One */
+
+        .sectionOne{
+            margin-top: 400px;
+        }
+
+        .sectionOne h1{
+            font-size: 52px;
+        }
+
+        .sectionOne img{
+            margin-top: 240px;
+            width: 533px;
+            height: 410px;
+            padding-left: 0;
+            padding-right: 120px;
+        }
+        
+        .sectionOneText{
+            margin-top: 320px;
+            margin-left: 240px;
+
+            padding-left: 120px;
+        }
+
+        .sectionOne .explorebtn{
+            font-size: 16px;
+            height: 44px;
+            width: 240px;
+        }
+
+        .sectionTwoTitle{
+            display: block;
+            margin: 0 auto;
+            /* width: 50%; */
+        }
+
+        /* Section Two */
+
+        .sectionTwoContent{
+            width: 800px;
+            height: 550px;
+            position: relative;  
+        }
+
+        .stepTwo h1{
+        }
+
+        .sectionTwoContent h2{
+            font-size: 32px;
+            padding-top: 60px;
+            margin-left: 90px;
+        }
+
+        .sectionTwoContent h3{
+            font-size: 20px;
+            margin-left: 90px;
+        }
+
+        .sectionTwoContent p{
+            margin-left: 90px;
+            margin-right: 320px;
+        }
+
+        .sectionTwoContent .learnMoreBtn{
+            margin-left: 90px;
+        }
+
+        #sectionTwoPic{
+            width: 414px;
+            height: 308px;
+
+            position: absolute;
+            left: 500px;
+            top: 260px;
+        }
+
+        /* icon section */
+
+        .iconSection ul{
+            width: 50%;
+        }
+
+        .iconSection li{
+            text-align: center;
+            margin-right: 40px;
+            margin-left: 40px;
+        }
+
+        .iconSection img{
+            width: 160px;
+            height: 160px;
+        }
+
+        .iconSection h1{
+            font-size: 60px;
+        }
+
+        .iconSection p{
+            font-size: 16px;
+            line-height: 1.2em;
+        }
+
+        /* Section 3 (Steps) */
+
+        
+        /* Step 1 */
+        
+        .stepOne{
+            width: 427px;
+            height: 427px;
+            margin-left:-400px;
+        }
+
+        #pic{
+            width: 242px;
+            height: 328px;
+        
+            position: absolute;
+            left: -160px;
+            top: 180px;
+        }
+
+        #number{
+            position: absolute;
+            left: 30px;
+            top: -40px;
+
+            width: 37px;
+            height: 102px;
+        }
+
+        .stepOne h1{
+            font-size: 32px;
+            margin-left: 90px;
+            padding-top: 76px;
+        }
+
+        .stepOne h2{
+            font-size: 20px;
+            margin-top: 20px;
+            margin-left: 90px;
+        }
+
+        .stepOne p{
+            font-size: 14px;
+            margin-top: 10px;
+            margin-left: 90px;
+            margin-right: 60px;
+
+        }
+
+        /* Step 2 */
+
+        .stepTwo{
+            width: 427px;
+            height: 427px;
+            margin-left: 290px;
+            margin-top: -50px;
+        }
+
+        #pictwo{
+            width: 315px;
+            height: 190px;
+        
+            position: absolute;
+            left: 170px;
+            top: 370px;
+        }
+
+        #numbertwo{
+            position: absolute;
+            left: 330px;
+            top: -40px;
+
+            width: 52px;
+            height: 92px;
+        }
+
+        .stepTwo h1{
+            font-size: 28px;
+            margin-left: 0px;
+            padding-top: 76px;
+        }
+
+        .stepTwo h2{
+            font-size: 20px;
+            margin-top: 20px;
+            margin-left: 70px;
+        }
+
+        .stepTwo p{
+            font-size: 14px;
+            margin-left: 70px;
+            margin-right: 60px;
+            margin-top: 4px;
+        }
+
+        /* Step 3 */
+
+        .stepThree{
+            width: 427px;
+            height: 427px;
+            margin-left:-400px;
+        }
+
+        #picthree{
+            width: 284px;
+            height: 358px;
+            position: absolute;
+            left: 430px;
+            top: 138px;
+        }
+
+        #numberthree{
+            position: absolute;
+            left: 30px;
+            top: -40px;
+
+            width: 37px;
+            height: 102px;
+        }
+
+        .stepThree h1{
+            font-size: 28px;
+            margin-left: 60px;
+            padding-top: 76px;
+        }
+
+        .stepThree h2{
+            font-size: 20px;
+            margin-top: 20px;
+            margin-left: 60px;
+        }
+
+        .stepThree p{
+            font-size: 14px;
+            margin-left: 60px;
+            margin-right: 56px;
+            margin-top: 4px;
+        }
+
+        /* Step 4 */
+
+        .stepFour{
+            width: 427px;
+            height: 427px;
+            margin-left: 390px;
+            margin-top: 52px;
+        }
+
+        #picfour{
+            width: 442px;
+            height: 319px;
+        
+            position: absolute;
+            left: 80px;
+            top: 200px;
+        }
+
+        #numberfour{
+            position: absolute;
+            left: 330px;
+            top: -40px;
+
+            width: 52px;
+            height: 92px;
+        }
+
+        .stepFour h1{
+            font-size: 30px;
+            margin-left: 46px;
+            padding-top: 76px;
+        }
+
+        .stepFour h2{
+            font-size: 20px;
+            margin-top: 20px;
+            margin-left: 46px;
+        }
+
+        .stepFour p{
+            font-size: 14px;
+            margin-left: 46px;
+            margin-right: 50px;
+            margin-top: 10px;
+        }
+
+        /* slide */
+
+        .slide-track img{
+            width: 260px;
+            height: 260px;
+        }
+
+        /* Section 4 */
+
+        #sectionfourtitle{
+            width: 70%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        #sectionfourpic{
+            width: 525px;
+            height: 462px;
+        
+            display: block;
+            margin: 0 auto;
+        
+        }
+    }
+
+
+    /* ------------768------------- */
+    @media screen and (max-width: 768px) {
+
+        body{
+            width: 100%;
+        }
+    
+        /* header */
+    
+        .outer{
+            background-color: #BBD94E;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10000000;
+    
+            width: 100vw;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    
+    
+        .downloadbtn{
+            background-color:#025949;
+            border: none;
+            color: #EEEEE1;
+            padding: 0 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            font-family: Geologica;
+            border-radius: 50px;
+            margin: 24px 30px;
+    
+            height: 32%;
+            min-width: 140px;
+        
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+    
+        .switches-container{
+            display: none;
+        }
+    
+            /* header */
+            .outer{
+                width: 100vw;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        
+            .headerlogo img{
+                display: block;
+                margin: 0 auto;
+                width: 70%;
+            }
+        
+            .downloadbtn{
+                font-size: 14px;
+                padding: 0 0 0 0;
+                margin: 0 0 0 0;
+            }
+    
+    
+        /* Nav Items */
+    
+        header ul{
+            color: #025949;
+            display: none; /*先讓導覽列不顯示*/
+        }
+    
+    
+        header a{
+            text-decoration: none;
+            color:#025949;
+        }
+    
+        header li a:hover {
+            color: #025949;
+            text-decoration: underline;
+        }
+    
+        .headerlogo{
+            margin: 0 auto;
+            margin-left: 64px;
+            margin-bottom: 10px;
+        }
+    
+        header li{
+            margin: 12px auto;
+            font-size: 18px;
+    
+        }
+    
+        .menu a{
+            margin: 0 auto;
+        }
+
+        .menu a li{
+            font-size: 18px;
+            line-height: 2.6;
+            margin-left: 0;
+
+        }
+
+        /* section 1 background animation */
+
+  .cristalBall{
+    /* display: none; */
+  }
+  
+  .background{
+    display: none;
+  }
+  
+  .circle{
+    display: none;
+  }
+  
+  .circle1{
+    display: none;
+  }
+  
+  .circle2{
+    display: none;
+  }
+  
+  /* .circle3{
+    background-color:#ee88fd;
+    height:500px;
+    border-radius:50%;
+    width: 500px;
+    margin: auto;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    font-size:50px;
+    animation: pulse2 3s linear infinite;
+  } */
+  
+  .star{
+    transform: translate(350px,50px);
+    opacity:.6;
+  }
+  
+  @keyframes pulse{
+    0%{width:700px;height:700px;}
+    50%{width:750px;height:750px;}
+    100%{width:700px;height:700px;}
+  }
+  
+  @keyframes pulse2{
+    0%{width:500px;height:500px;}
+    50%{width:550px;height:550px;}
+    100%{width:500px;height:500px;}
+  }
+  
+  @keyframes pulse3{
+    0%{width:1000px;height:1000px;}
+    50%{width:1050px;height:1050px;}
+    100%{width:1000px;height:1000px;}
+  }
+
+
+        /* Section 1 */
+
+        .sectionOne{
+            display: block;
+            margin-top: 700px;
+        }
+
+        .sectionOne img{
+            display: block;
+            margin: 0 auto;
+            padding-right: 0;
+            width: 532px;
+            height: 410px;
+        }
+
+        .sectionOneText{
+            margin: 240px auto 0;
+            padding-left: 0;
+        }
+
+        .sectionOne h1{
+            font-size: 48px;
+            text-align: center;
+            /* margin-left: 270px; */
+        }
+
+        .sectionOne .explorebtn{
+            display: block;
+            margin: 20px auto;
+        }
+
+        .sectionOne a{
+            text-decoration: none ;
+        }
+
+
+        /* Section 2 */
+
+        .sectionTwoTitle{
+            width: 100%;
+            height: 280px;
+        }
+
+        .sectionTwoContent{
+            /* max-width: 768px; */
+            width: 100%;
+            height: 760px;
+        }
+
+        .sectionTwoContent h2{
+            line-height: 1.2;
+            margin-top: 20px;
+        }
+
+        .sectionTwoContent h3{
+            margin-top: 10px;
+        }
+
+        .sectionTwoContent p{
+            margin-right: 70px
+        }
+
+        #sectionTwoPic{
+            width: 455px;
+            height: 339px;
+
+            left: 160px;
+            top: 440px;
+        }
+
+        /* Icon Section */
+        .iconSection img{
+            width: 120px;
+            height: 120px;
+        }
+
+        .iconSection h1{
+            font-size: 54px;
+        }
+
+        .iconSection p{
+            font-size: 14px;
+        }
+
+        
+
+
+        /* ----Section 3 (Steps)--- */
+        .sectionThreeTitle{
+            width: 100%;
+            height: 280px;
+        }
+        
+        /* --------Step 1-------- */
+
+        .stepOne{
+            display: block;
+            margin: 0 auto;
+            width: 427px;
+            height: 427px;
+        }
+
+        .stepOne p{
+            line-height: 1.6;
+        }
+        
+        /* --------Step 2-------- */
+
+        .stepTwo{
+            display: block;
+            margin: 60px auto;
+            width: 427px;
+            height: 427px;
+        }
+
+        .stepTwo p{
+            line-height: 1.6;
+            margin-top: 12px;
+        }
+
+        #pictwo{
+            width: 297px;
+            height: 180px;
+
+            top: 360px;
+            left: 180px;
+        }
+
+        /* --------Step 3-------- */
+
+        .stepThree{
+            display: block;
+            margin: 60px auto;
+            width: 427px;
+            height: 427px;
+        }
+
+        .stepThree h1{
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .stepThree h2{
+            margin-bottom: 10px;
+        }
+
+        .stepThree p{
+            line-height: 1.6;
+        }
+
+        #picthree{
+            display: none;
+            /* width: 218px;
+            height: 272px;
+            left: 376px;
+            top: 168px; */
+        }
+
+        /* --------Step 4-------- */
+        .stepFour h1{
+            line-height: 1.4;
+        }
+        
+
+
+        
+
+        /* some of our partners */
+
+        #logotitle{
+            font-size: 26px;
+        }
+
+        .slider .slide{
+            height: 240px;
+            width: 240px;
+        }
+
+
+        
+        /* --------Step 4-------- */
+
+        #sectionfourtitle{
+            width: 90%;
+            height: 320px;
+        }
+        
+
+        .stepFour{
+            display: block;
+            margin: 60px auto;
+            width: 427px;
+            height: 427px;
+        }
+
+        #picfour{
+            width: 375px;
+            height: 272px;
+
+            left: 80px;
+            top: 240px;
+        }
+
+        .stepFour p{
+            line-height: 1.6;
+        }
+
+    /* footer */
+
+    .footer{
+        max-width: 768px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        padding-bottom: 30px;
+      }
+
+      .appstore img{
+        display: none;
+        width: 40%;
+    }
+
+    .kindfoodlogo p{
+        font-size: 8px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .kindfoodlogo img{
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        height: 50%;
+    }
+
+    .socialmedia img{
+        display: none;
+    }
+
+    }
+
+
+    /* ------------576------------- */
+    @media screen and (max-width: 576px){
+
+        #sectionTwoPic{
+            width: 360px;
+            height: 268px;
+            left: 120px;
+        }
+
+        .iconSection li{
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+
+}
+
+
+
+
+
+
+
+
+    /* ------------414------------- */
+
+    @media screen and (max-width: 414px) {
+
+        body{
+            width: 100%;
+        }
+        
+    
+        /* header */
+    
+        .outer{
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 1920 download button */
+    
+        .downloadbtn{
+            display: none;
+        }
+
+        /* 1920 popup */
+    
+        .popup {
+            display: none;
+            position: fixed;
+            z-index: 4;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+          }
+          
+          .popcard {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:#EEEEE1;
+            color:#025949;
+            line-height: 1.3em;
+            text-align: left;
+            font-weight: bold;
+            border-radius: 20px;
+            margin: 10% auto;
+            padding: 40px;
+            width: 30%;
+            text-align: center;
+            font-size: 1.2rem;
+            box-shadow: 0 2px 15px 0 black;
+            animation: popup 0.5s;
+          }
+        
+          .popcard img{
+            margin-left: 30px;
+          }
+          
+          @keyframes popup {
+            from {
+              opacity: 0;
+            }
+            to { 
+              opacity: 1;
+            }
+          }
+
+
+        /* 414 download button */
+    
+        .downloadbtnApp{
+            background-color:#025949;
+            border: none;
+            color: #EEEEE1;
+            padding: 0 12px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 auto;
+            font-size: 16px;
+            font-family: Geologica;
+            border-radius: 50px;
+            line-height: 2.5em;
+            margin-top: 20px;
+            margin-bottom: 22px;
+    
+            width: 200px;
+        
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+    
+        .downloadbtnApp:hover {
+            background-color: #EEEEE1;
+            color:#025949;
+          }
+
+        /* 414 popup */
+
+        .popupApp {
+            display: none;
+            position: fixed;
+            z-index: 4;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+          }
+          
+          .popcardApp {
+            display: block;
+            background-color:#EEEEE1;
+            color:#025949;
+            line-height: 1.3em;
+            text-align: left;
+            font-weight: bold;
+            border-radius: 20px;
+            margin: 25% auto;
+            padding: 40px;
+            width: 50%;
+            text-align: center;
+            font-size: 1.3rem;
+            box-shadow: 0 2px 15px 0 black;
+            animation: popup 0.5s;
+          }
+        
+          .popcardApp img{
+            margin: 0 auto;
+          }
+          
+          @keyframes popupApp {
+            from {
+              opacity: 0;
+            }
+            to { 
+              opacity: 1;
+            }
+          }
+            
+
+        /* dropdown menu */
+    
+        .menu-toggle{
+            font-size: 30px;
+            cursor: pointer;
+        }
+    
+        .headerlogo{
+            margin: 0 auto;
+            margin-left: 56px;
+            margin-bottom: 14px;
+            width: 54%;
+    
+            /* width: 60%; */
+    
+            /* padding-right: 20px; */
+        }
+    
+        header li{
+            margin: 10px auto;
+            font-size: 20px;
+        }
+    
+        header li:nth-child(1){
+            margin-left: 0;
+        } 
+    
+        .hamburger::after, .hamburger::before{
+            width: 30px;
+        }
+    
+        .hamburger{
+            width: 30px;
+        }
+    
+        .menu a{
+            margin: 0 auto;
+        }
+
+
+        /* Section 1 */
+
+        .sectionOne{
+            margin-top: 400px;
+            height: 390px;
+        }
+
+        .sectionOne h1{
+            margin-left: 0;
+            text-align: center;
+            font-size: 32px;
+            /* margin-left: 90px; */
+        }
+
+        .sectionOne .explorebtn{
+            /* margin-left: 110px; */
+        }
+
+        .sectionOne img{
+            width: 370px;
+            height: 285px;
+            margin-right: 0;
+            margin-left: 20px;
+        }
+
+
+        /* Section 2 */
+
+        .sectionTwoTitle{
+            width: 100%;
+            height: 280px;
+        }
+
+        .sectionTwoContent{
+            width: 360px;
+            height: 700px;
+        }
+
+        .sectionTwoContent h2{
+            line-height: 1.2;
+            font-size: 22px;
+            padding-top: 80px;
+            margin-left: 60px;
+        }
+
+        .sectionTwoContent h3{
+            margin-top: 20px;
+            font-size: 18px;
+            margin-left: 60px;
+        }
+
+        .sectionTwoContent p{
+            font-size: 14px;
+            margin-left: 60px;
+            margin-right: 50px;
+        }
+
+        #sectionTwoPic{
+            width: 320px;
+            height: 228px;
+            left: 20px;
+            top: 484px;
+        }
+
+        .sectionTwoContent .learnMoreBtn{
+            height: 40px;
+            width: 60px;
+            margin-left: 76px;
+        }
+
+        /* ----Icon Section---- */
+
+        
+        .iconSection ul{
+            display: block;
+        }
+
+        .iconSection li{
+            display: block;
+            margin-top: 40px;
+        }
+
+        .iconSection h1{
+            text-align: center;
+        }
+
+        .iconTwoText{
+            margin-left: -20px;
+        }
+
+
+        /* Section 3 (steps)*/
+
+        .sectionThreeTitle{
+            margin-top: 400px;
+            width: 100%;
+            height: 340px;
+        }
+
+        /* Step 1 */
+
+        .stepOne{
+            width: 327px;
+            height: 327px;
+        }
+
+        .stepOne h1{
+            padding-top: 90px;
+            font-size: 24px;
+            margin-left: 76px;
+        }
+
+        .stepOne h2{
+            display: none;
+
+            font-size: 18px;
+            margin-left: 70px;
+        }
+
+        .stepOne-secondP{
+            display: none;
+        }
+
+        .stepOne p{
+            font-size: 16px;
+            margin-left: 76px;
+            margin-right: 60px;
+            margin-top: 20px;
+        }
+
+        #pic{
+            width: 188px;
+            height: 256px;
+
+            left: 160px;
+            top: 200px;
+        }
+
+        /* Step 2 */
+
+        .stepTwo{
+            margin-top: 118px;
+            width: 327px;
+            height: 327px;
+        }
+
+        .stepTwo h1{
+            padding-top: 70px;
+            font-size: 22px;
+        }
+
+        .stepTwo h2{
+            display: none;
+
+            font-size: 18px;
+            margin-left: 70px;
+        }
+
+        .stepTwo-secondP{
+            display: none;
+        }
+
+        .stepTwo p{
+            font-size: 16px;
+            margin-left: 52px;
+            margin-right: 40px;
+            margin-top: 20px;
+        }
+
+        #numbertwo{
+            left: 30px;
+            top: -50px;
+        }
+
+        #pictwo{
+            width: 233px;
+            height: 141px;
+
+            left: 90px;
+            top: 240px;
+        }
+
+        /* Step 3 */
+
+        .stepThree{
+            margin-top: 50px;
+            width: 327px;
+            height: 327px;
+        }
+
+        .stepThree h1{
+            padding-top: 60px;
+            font-size: 22px;
+            margin-left: 50px;
+        }
+
+        .stepThree h2{
+            display: none;
+
+            font-size: 18px;
+            margin-left: 70px;
+        }
+
+        .stepThree-secondP{
+            display: none;
+        }
+
+        .stepThree p{
+            font-size: 16px;
+            margin-left: 52px;
+            margin-right: 40px;
+            margin-top: 20px;
+        }
+
+        #numberthree{
+            left: 30px;
+            top: -50px;
+        }
+
+        #picthree{
+            display: block;
+            width: 181px;
+            height: 227px;
+
+            left: 140px;
+            top: 240px;
+        }
+
+        /* Step 4 */
+
+        .stepFour{
+            margin-top: 70px;
+            width: 327px;
+            height: 327px;
+        }
+
+        .stepFour h1{
+            padding-top: 60px;
+            font-size: 22px;
+            margin-left: 50px;
+        }
+
+        .stepFour h2{
+            display: none;
+
+            font-size: 18px;
+            margin-left: 70px;
+        }
+
+
+        .stepFour p{
+            font-size: 16px;
+            margin-left: 52px;
+            margin-right: 40px;
+            margin-top: 20px;
+        }
+
+        #numberfour{
+            left: 30px;
+            top: -50px;
+        }
+
+        #picfour{
+            width: 278px;
+            height: 200px;
+
+            left: 70px;
+            top: 240px;
+        }
+
+
+        /* -----Some of our partners (logos)------ */
+
+        #logotitle{
+            font-size: 24px;
+        }
+
+        .slide img{
+            width: 180px;
+            height: 180px;
+        }
+
+        .slider .slide{
+            margin-right: 0;
+        }
+
+
+        /* Section 4 */
+        #sectionfourtitle{
+            display: none;
+        }
+
+        #sectionfourpic{
+            width: 375px;
+            height: 330px;
+
+        }
+
+        /* footer */
+
+        .footer{
+            width: 100%;
+            bottom: 0;
+            height: 50px;
+        }
+
+        .kindfoodlogo img{
+            width: 36%;
+            margin-bottom: 5px;
+        }
+
+        .kindfoodlogo p{
+            line-height: 1.4;
+            margin-right: 48px;
+        }
+
+} /* End of 414 */

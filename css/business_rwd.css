@@ -1,0 +1,721 @@
+/* -----1280----- */
+
+@media screen and (max-width: 1280px){
+
+
+    .downloadbtn-app{
+        display: none;
+    }
+    
+    .menu{
+        /* display: none; */
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        background-color:#BBD94E;
+        width: 100%;
+    }
+
+    header li:nth-child(1) {
+        margin-left: 0px;
+    }
+
+    .menu a li{
+        margin-left: 0;
+        text-align: center;
+        font-size: 24px;
+        line-height: 3.6;
+    }
+
+    /* Content Left */
+
+    .contentleft{
+    }
+
+    #cook{
+        width: 584px;
+        height: 470px;
+    }
+
+
+    /* Content Right */
+    
+    .contentright{
+        margin-left: 20px;
+        width: 472px;
+        height: 584px;
+    }
+
+    .contentright h3{
+        margin-top: 50px;
+    }
+
+    #inputboxes{
+        margin: 0 auto;
+        /* margin-top: 0;
+        margin-left: 0;
+        margin-right: 0; */
+    }
+
+
+    /* Section 3 (How It Works?) */
+
+    /* Step 1 */
+
+    .stepOne{
+        width: 1000px;
+        height: 320px;
+    }
+
+    #pic{
+        width: 266px;
+        height: 428px;
+
+        left: 700px;
+        top: -86px;
+    }
+
+    .stepOne h1{
+        padding-left: 200px;
+        padding-top: 100px;
+    }
+
+    .stepOne p{
+        padding-left: 200px;
+    }
+    
+
+    /* Step 2 */
+
+    .stepTwo{
+        width: 1000px;
+        height: 320px;
+    }
+
+    #numbertwo{
+        left: 40px;
+        top: -72px;
+    }
+    
+    #pictwo{
+        width: 432px;
+        height: 399px;
+
+        left: 660px;
+        top: -62px;
+    }
+
+    .stepTwo h1{
+        padding-left: 200px;
+        padding-top: 120px;
+    }
+
+    .stepTwo p{
+        padding-left: 200px;
+        padding-right: 280px;
+    }
+
+
+    /* Step 3 */
+
+
+    .stepThree{
+        width: 1000px;
+        height: 320px;
+    }
+
+    #numberthree{
+        left: 40px;
+        top: -72px;
+    }
+    
+    #picthree{
+        width: 438px;
+        height: 374px;
+
+        left: 650px;
+        top: -33px;
+    }
+
+    .stepThree h1{
+        font-size: 36px;
+        padding-left: 220px;
+        padding-top: 40px;
+    }
+
+    .stepThree p{
+        font-size: 18px;
+        padding-left: 220px;
+        padding-right: 380px;
+        margin-top: 10px;
+    }
+
+
+    /* Partner Comments */
+
+
+    #biztitle{
+        width: 80%;
+    }
+
+    .commentsContent li{
+        width: 180px;
+        height: 460px;
+    }
+
+    .commentsContent img{
+        margin-left: 34px;
+
+    }
+
+    .commentsContent p{
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .commentsContent h4{
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .commentsContent h5{
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+}
+
+/* --------768-------- */
+
+@media screen and (max-width: 768px){
+
+    /* Section 1 */
+
+    .sectionOneOuter{
+        display: block;
+    }
+
+    /* Content Left */
+
+    .contentleft h1{
+        font-size: 36px;
+    }
+
+    #revenue{
+        width: 40%;
+    }
+
+    .contentleft p{
+        margin-top: 10px;
+    }
+
+    /* Content Right */
+
+    .contentright{
+        margin: 0 auto;
+        width: 572px;
+        height: 484px;
+    }
+
+    .contentright h3{
+        font-size: 20px;
+        padding-top: 50px;
+    }
+
+    #cook{
+        width: 450px;
+        height: 362px;
+        margin-left: 156px;
+        margin-top: 10px;
+    }
+
+    #inputboxes{
+        margin: 5px auto;
+    }
+
+    input[type=text]{
+        margin: 5px 0;
+    }
+
+    .topregisterbtn{
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+
+
+    /* Content Right */
+
+
+    /* Section 2 */
+
+    #biztitleone{
+        height: 220px;
+    }
+
+    .sectionTwoOuter{
+    }
+
+    .sectionTwoOuter h1{
+        font-size: 28px;
+    }
+
+    .sectionTwoOuter p{
+        font-size: 16px;
+    }
+
+    .sectionTwoOuter ul{
+        margin-left: 0;
+    }
+
+    .sectionTwoOuter li{
+        margin: 0 auto;
+        /* margin-right: 40px; */
+    }
+
+    .sectionTwoOuter img{
+        width: 160px;
+        height: 160px;
+    }
+
+    /* Some of our partners */
+    #logotitle{
+        font-size: 24px;
+    }
+
+    .slide img{
+        height: 240px;
+        width: 240px;
+    }
+
+
+
+    /* Section 3 (How It Works?) */
+
+    .sectionThreeTitle{
+        height: 220px;
+    }
+
+    
+
+    /* Step 1 */
+
+    .stepOne{
+        width: 660px;
+        height: 260px;
+    }
+
+    #pic{
+        width: 199px;
+        height: 321px;
+        
+        left: 440px;
+        top: -45px;
+    }
+
+    #number{
+        width: 40px;
+        height: 113px;
+        left: 60px;
+        top: -70px;
+    }
+
+    .stepOne h1{
+        font-size: 28px;
+        padding-left: 60px;
+    }
+
+    .stepOne p{
+        font-size: 16px;
+        padding-right: 180px;
+        padding-left: 60px;
+    }
+
+    /* Step 2 */
+
+    .stepTwo{
+        width: 660px;
+        height: 260px;
+    }
+
+    #pictwo{
+        width: 324px;
+        height: 299px;
+        
+        left: 380px;
+        top: -27px;
+    }
+
+    #numbertwo{
+        width: 68px;
+        height: 122px;
+
+        left: 60px;
+        top: -70px;
+    }
+
+    .stepTwo h1{
+        font-size: 28px;
+        padding-top: 100px;
+        padding-left: 60px;
+    }
+
+    .stepTwo p{
+        font-size: 16px;
+        padding-right: 240px;
+        padding-left: 60px;
+    }
+
+    /* Step 3 */
+
+    .stepThree{
+        width: 660px;
+        height: 260px;
+    }
+
+    #picthree{
+        width: 313px;
+        height: 234px;
+        
+        left: 380px;
+        top: 39px;
+    }
+
+    #numberthree{
+        width: 59px;
+        height: 126px;
+        /* width: 68px;
+        height: 122px; */
+
+        left: 60px;
+        top: -70px;
+    }
+
+    .stepThree h1{
+        font-size: 24px;
+        padding-top: 70px;
+        padding-left: 60px;
+    }
+
+    .stepThree p{
+        font-size: 14px;
+        padding-right: 270px;
+        padding-left: 60px;
+    }
+
+
+    /* Partner Comments */
+
+    #biztitle{
+        height: 240px;
+    }
+
+    .commentsContent ul{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .commentsContent li{
+        margin: 80px auto;
+        width: 600px;
+        height: 260px;
+
+        position: relative;
+    }
+
+    .commentsContent img{
+        width: 129px;
+        height: 158px;
+        margin-left: 240px;
+        margin-top: -50px;
+
+        position: absolute;
+    }
+
+    .commentsContent p{
+        line-height: 1.4;
+        padding-top: 100px;
+    }
+
+    .commentsContent h4{
+        margin-top: 5px;
+    }
+
+    /* footer */
+
+    .footer{
+        max-width: 768px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        padding-bottom: 30px;
+      }
+
+      .appstore img{
+        display: none;
+        width: 40%;
+    }
+
+    .kindfoodlogo p{
+        font-size: 8px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .kindfoodlogo img{
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        height: 50%;
+    }
+
+    .socialmedia img{
+        display: none;
+    }
+
+}
+
+
+ /* --------414--------- */
+
+ @media screen and (max-width: 414px){
+
+
+    /* Section 1 */
+
+    /* Content Left */
+
+    .contentleft h1{
+        font-size: 28px;
+    }
+
+    #revenue{
+        width: 60%;
+    }
+    
+    #cook{
+        width: 359px;
+        height: 282px;
+        display: block;
+        margin: 20px auto;
+        /* margin-left: 0; */
+    }
+
+    /* Content Right */
+
+    .contentright{
+        width: 340px;
+        height: 520px;
+    }
+
+    .contentright h3{
+        font-size: 18px;
+        margin: 40px 40px 20px;
+    }
+
+    #inputboxes{
+    }
+
+    input[type=text]{
+        width: 280px;
+        margin: 5px auto;
+        margin-left: 30px;
+    }
+
+    .topregisterbtn{
+        margin-top: 20px;
+    }
+
+
+    /* Section 2 */
+
+    .biztitleone{
+    }
+
+    .sectionTwoOuter ul{
+        display: block;
+    }
+
+    .sectionTwoOuter li{
+        margin-bottom: 30px;
+    }
+
+    .sectionTwoOuter img{
+        width: 140px;
+        height: 140px;
+    }
+
+    .registermybizbtn{
+        font-size: 14px;
+
+    }
+
+    /* Some of our partners (logo slides) */
+
+    #logotitle{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .slide img{
+        width: 180px;
+        height: 180px;
+    }
+
+    .slider .slide{
+        margin-right: 0;
+    }
+
+
+    /* Section 3 (steps) */
+
+    .sectionThreeTitle{
+        height: 180px;
+    }
+
+    
+
+    /* Step 1 */
+
+    .stepOne{
+        width: 327px;
+        height: 327px;
+    }
+
+    #number{
+        width: 39px;
+        height: 90px;
+
+        left: 40px;
+        top: -40px;
+    }
+
+    #pic{
+        width: 139px;
+        height: 224px;
+        
+        left: 172px;
+        top: 220px;
+    }
+
+    .stepOne h1{
+        padding-top: 70px;
+        line-height: 1.2;
+        font-size: 24px;
+    }
+
+    .stepOne p{
+        line-height: 1.3;
+        font-size: 14px;
+        padding-right: 50px;
+        margin-top: 10px;
+    }
+
+    /* Step 2 */
+
+    .stepTwo{
+        margin-top: 106px;
+        width: 327px;
+        height: 327px;
+    }
+
+    #numbertwo{
+        width: 51px;
+        height: 92px;
+
+        left: 40px;
+        top: -40px;
+    }
+
+    #pictwo{
+        width: 216px;
+        height: 200px;
+        
+        left: 110px;
+        top: 210px;
+    }
+
+    .stepTwo h1{
+        padding-top: 70px;
+        margin-right: 30px;
+        line-height: 1.2;
+        font-size: 24px;
+    }
+
+    .stepTwo p{
+        line-height: 1.3;
+        font-size: 14px;
+        padding-right: 50px;
+        margin-top: 10px;
+    }
+
+    /* Step 3 */
+
+    .stepThree{
+        width: 327px;
+        height: 327px;
+    }
+
+    #numberthree{
+        width: 39px;
+        height: 90px;
+
+        left: 40px;
+        top: -40px;
+    }
+
+    #picthree{
+        width: 250px;
+        height: 187px;
+        
+        left: 120px;
+        top: 268px;
+    }
+
+    .stepThree h1{
+        padding-top: 70px;
+        padding-left: 60px;
+        padding-right: 30px;
+        line-height: 1.2;
+        font-size: 24px;
+    }
+
+    .stepThree p{
+        line-height: 1.3;
+        font-size: 14px;
+        padding-right: 30px;
+        margin-top: 10px;
+    }
+
+
+    /* Partner Comments */
+
+    #biztitle{
+        width: 100%;
+    }
+
+    .commentsContent li{
+        width: 180px;
+        height: 460px;
+        margin-bottom: 30px;
+    }
+
+    .commentsContent img{
+        width: 103px;
+        height: 128px;
+        margin-left: 0;
+
+        margin-left: 56px;
+        margin-top: -30px;
+    }
+
+    .registernowbtn{
+        margin-top: 0px;
+    }
+
+
+
+ } /* End of 414 */

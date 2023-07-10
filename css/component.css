@@ -1,0 +1,900 @@
+@import url(reset.css);
+@font-face {
+    font-family: 'Geologica', 'Verdana', 'Montserrat', 'Noto Sans', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Geologica:wght@200;300&family');
+}
+
+/* ---------------Header -------------------*/
+
+body{
+    background-color: #EEEEE1;
+    font-family: 'Geologica', sans-serif;
+
+    width: 100%;
+    align-items: center;
+	justify-content: center;
+}
+
+.outer{
+    background-color: #BBD94E;
+    display: flex;
+    border-radius: 0px 0px 50px 50px;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100000000;
+
+    width: 100%;
+    height: 120px;
+}
+
+/* 1920px download button + popup message */
+
+.downloadbtn {
+    background-color:#025949;
+    border: none;
+    color: #EEEEE1;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    font-family: Geologica;
+    margin: 30px 2px;
+    margin-left: 90px;
+    border-radius: 50px;
+    height: 48%;
+    min-width: 180px;
+
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .downloadbtn:hover {
+    background-color: #EEEEE1;
+    color:#025949;
+    font-weight:500;
+  }
+
+
+  .popup {
+    display: none;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .popcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#EEEEE1;
+    color:#025949;
+    line-height: 1.3em;
+    text-align: left;
+    font-weight: bold;
+    border-radius: 20px;
+    margin: 20% auto;
+    padding: 40px;
+    width: 30%;
+    text-align: center;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 15px 0 black;
+    animation: popup 0.5s;
+  }
+
+  .popcard img{
+    margin-left: 30px;
+  }
+  
+  @keyframes popup {
+    from {
+      opacity: 0;
+    }
+    to { 
+      opacity: 1;
+    }
+  }
+
+  /* 414 popup message */
+
+  .popupApp h2{
+    display: none;
+  }
+
+  .popupApp img{
+    display: none;
+  }
+
+
+/* Nav Items */
+
+nav{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 30px;
+    margin-right: 0px;
+}
+
+header ul{
+    color: #025949;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+header li{
+    margin-right: 80px;
+}
+
+header li:nth-child(1){
+    margin-left: 30px;
+}
+
+header a{
+    font-size: 20px;
+    text-decoration: none;
+    color:#025949;
+}
+
+header li a:hover {
+    color: #025949;
+    text-decoration: underline;
+}
+
+
+.headerlogo{
+    display: block;
+    margin: 0 auto;
+    margin-left: 54px;
+    margin-right: auto;
+    padding-top: 10px;
+}
+
+/* dropdown menu */
+
+.menu-toggle{
+    display: none;
+}
+
+.menu{
+    display: none;
+}
+
+
+/* -----------Switch Function -------------*/
+
+/* * {
+    box-sizing: border-box;
+} */
+
+:root {
+    --switches-bg-color: #025949;
+    --switches-label-color: #EEEEE1;
+    --switch-bg-color: #EEEEE1;
+    --switch-text-color: #025949 ;
+}
+
+
+/* resize font-size on html and body level. html is required for widths based on rem */
+@media screen and (min-width: 1024px) {
+
+    html,
+    body {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    html,
+    body {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    html,
+    body {
+        font-size: 12px;
+    }
+}
+
+
+/* container for all of the switch elements 
+    - adjust "width" to fit the content accordingly 
+*/
+.switches-container {
+    font-size: 18px;
+    width: 10rem;
+    height: 50%;
+    position: relative;
+    display: flex;
+    padding: 0;
+    position: relative;
+    background: var(--switches-bg-color);
+    line-height: 3rem;
+    border-radius: 3rem;
+    margin-left: auto;
+    margin-right: 90px;
+    margin-top: 30px;
+}
+
+/* input (radio) for toggling. hidden - use labels for clicking on */
+.switches-container input {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+}
+
+/* labels for the input (radio) boxes - something to click on */
+.switches-container label {
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    line-height: 3.5;
+    cursor: pointer;
+    color: var(--switches-label-color);
+}
+
+/* switch highlighters wrapper (sliding left / right) 
+    - need wrapper to enable the even margins around the highlight box
+*/
+.switch-wrapper {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 50%;
+    padding: 0.15rem;
+    z-index: 3;
+    transition: transform .5s cubic-bezier(.77, 0, .175, 1);
+    /* transition: transform 1s; */
+}
+
+/* switch box highlighter */
+.switch {
+    border-radius: 3rem;
+    background: var(--switch-bg-color);
+    height: 100%;
+    line-height: 3.5;
+}
+
+/* switch box labels
+    - default setup
+    - toggle afterwards based on radio:checked status 
+*/
+.switch div {
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    display: block;
+    color: var(--switch-text-color) ;
+    transition: opacity .2s cubic-bezier(.77, 0, .175, 1) .125s;
+    will-change: opacity;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* slide the switch box from right to left */
+.switches-container input:nth-of-type(1):checked~.switch-wrapper {
+    transform: translateX(0.5%);
+}
+
+/* slide the switch box from left to right */
+.switches-container input:nth-of-type(2):checked~.switch-wrapper {
+    transform: translateX(89%);
+}
+
+/* toggle the switch box labels - first checkbox:checked - show first switch div */
+.switches-container input:nth-of-type(1):checked~.switch-wrapper .switch div:nth-of-type(1) {
+    opacity: 1;
+}
+
+/* toggle the switch box labels - second checkbox:checked - show second switch div */
+.switches-container input:nth-of-type(2):checked~.switch-wrapper .switch div:nth-of-type(2) {
+    opacity: 1;
+}
+
+
+/* ------------------Footer------------------- */
+
+.footer{
+    background-color: #BBD94E;
+    border-radius: 50px 50px 0px 0px;
+
+    display: flex;
+    justify-content: space-around;
+
+    width: 100%;
+    height: 120px;
+
+    margin-top: 50px;
+    padding-top: 30px;
+
+}
+
+.appstore{
+
+}
+
+.appstore img{
+    margin-top: 30px;
+
+}
+
+.kindfoodlogo img{
+    display: block;
+    margin: 0 auto;
+    margin-left: 140px;
+
+}
+
+.kindfoodlogo p{
+    font-size: 12px;
+    color: #025949;
+    text-align: center;
+    margin-left: 40px;
+
+}
+
+.socialmedia img{
+
+}
+
+
+
+
+
+/* --------------RWD---------------- */
+
+/* -------1280------- */
+
+@media screen and (max-width: 1280px){
+
+    /* download button + popup message */
+
+    
+    .downloadbtn{
+        margin-left: 30px;
+    }
+
+    .popcard{
+        margin: 20% auto;
+        padding: 40px;
+        width: 40%;
+        font-size: 1rem;
+    }
+
+
+    .switches-container{
+        display: none;
+    }
+
+    header ul{
+        display: none;
+    }
+
+    header li{
+        text-align: center;
+    }
+
+    header li:nth-child(3) {
+        text-align: center;
+    }
+
+    .outer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 0 0 0;
+    }
+
+    .kindFoodLogo{
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .headerlogo{
+        display: block;
+        margin: 0 auto;
+
+        margin-left: 250px;
+        margin-bottom: 10px;
+    }
+
+    /* 下拉式選單 */
+
+    .menu-toggle{
+        display: block;
+        font-size: 44px;
+        margin-right: 40px;
+        cursor: pointer;
+        width: var(--size);
+        height: var(--size);
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+        position:relative;
+        z-index:6;
+    }
+
+    .hamburger {
+        width: 40px;
+        height: 4px;
+        background:#025949;
+        border-radius: 50px;
+        display: block;
+        position: relative;
+        transition: all ease-in-out 0.3s;
+    }
+
+    .hamburger::after, .hamburger::before {
+	content: " ";
+	position: absolute;
+	width: 40px;
+	height: 4px;
+    background:#025949;
+    border-radius: 50px;
+	transition: all ease-in-out 0.3s;
+    }
+
+    .hamburger::before {
+        bottom: 0.5em;
+    }
+    .hamburger::after {
+        top: 0.5em;
+    }
+
+    .open {
+        transform: rotate(45deg);
+    }
+
+    .open::before {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.3s, opacity 0.3s;
+    }
+    .open::after {
+        transform: rotate(-90deg);
+        top: 0;
+    }
+    
+    .menu {
+        display: flex;
+        flex-direction: column;
+        background:#BBD94E;
+        padding: 1em;
+        margin: 2em 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.3s, opacity 0.3s;
+        margin-top: -2em;
+        transition: all ease-in-out 0.3s;
+        width:50%;
+    }
+
+    .menu-is-open {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 1.8em;
+    }
+
+    .menu a{
+        text-decoration:none;
+        color:#025949;
+        font-size: 1.1em;
+        line-height: 3;
+        text-align: center;
+        margin-right: -80px;
+    }
+
+
+    /* .menu-toggle i:hover ~ ul{
+        display: flex;
+    } */
+
+    
+    .menu{
+        /* display: none; */
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 61px;
+        background-color:#BBD94E;
+        width: 100%;
+    }
+
+    .menu li{
+        text-align: center;
+        font-size: 24px;
+        line-height: 3.6;
+    }
+
+    .downloadbtnApp{
+        display: none;
+    }
+
+}
+
+
+
+/*---------- 768 ----------*/
+
+@media screen and (max-width: 768px) {
+
+    body{
+        width: 100%;
+    }
+
+    /* header */
+
+    .outer{
+        background-color: #BBD94E;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000000;
+
+        width: 100vw;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    .downloadbtn{
+        background-color:#025949;
+        border: none;
+        color: #EEEEE1;
+        padding: 0 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        font-family: Geologica;
+        border-radius: 50px;
+        margin: 24px 30px;
+
+        height: 32%;
+        min-width: 140px;
+    
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+
+    .downloadbtnApp{
+        display: none;
+    }
+
+    .popcard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:#EEEEE1;
+        color:#025949;
+        line-height: 1.3em;
+        text-align: left;
+        font-weight: bold;
+        border-radius: 20px;
+        margin: 20% auto;
+        padding: 10px;
+        width: 60%;
+        text-align: center;
+        font-size: 1.2em;
+        box-shadow: 0 2px 15px 0 black;
+        animation: popup 0.5s;
+      }
+
+      .popcard h2{
+        font-size: 1em;
+        line-height: 1.3em;
+      }
+    
+      .popcard img{
+        margin-left: 30px;
+      }
+
+    .switches-container{
+        display: none;
+    }
+
+        /* header */
+        .outer{
+            width: 100vw;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    
+        .headerlogo img{
+            display: block;
+            margin: 0 auto;
+            width: 70%;
+        }
+    
+        .downloadbtn{
+            font-size: 14px;
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+        }
+
+        
+
+
+    /* Nav Items */
+
+    header ul{
+        color: #025949;
+        display: none; /*先讓導覽列不顯示*/
+    }
+
+
+    header a{
+        text-decoration: none;
+        color:#025949;
+    }
+
+    header li a:hover {
+        color: #025949;
+        text-decoration: underline;
+    }
+
+    .headerlogo{
+        margin: 0 auto;
+        margin-left: 64px;
+        margin-bottom: 10px;
+    }
+
+    header li{
+        margin: 12px auto;
+        font-size: 18px;
+
+    }
+
+    .menu a{
+        margin: 0 auto;
+    }
+
+    .menu a li{
+        font-size: 18px;
+        line-height: 2.6;
+        margin-left: 0;
+
+    }
+
+
+}
+
+
+/* ------------576------------- */
+@media screen and (max-width: 576px){
+
+    /* .headerlogo img{
+        margin-left: 0;
+    } */
+
+   }
+
+
+
+
+/*---------- 414 ----------*/
+
+@media screen and (max-width: 414px){
+
+
+    body{
+        width: 100%;
+    }
+    
+
+    /* header */
+
+    .outer{
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* 1920 download button + popup */
+
+    .downloadbtn{
+        display: none;
+    }
+
+    .popup {
+        display: none;
+        position: fixed;
+        z-index: 4;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.4);
+      }
+      
+      .popcard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:#EEEEE1;
+        color:#025949;
+        line-height: 1.3em;
+        text-align: left;
+        font-weight: bold;
+        border-radius: 20px;
+        margin: 10% auto;
+        padding: 40px;
+        width: 30%;
+        text-align: center;
+        font-size: 1.2rem;
+        box-shadow: 0 2px 15px 0 black;
+        animation: popup 0.5s;
+      }
+    
+      .popcard img{
+        margin-left: 30px;
+      }
+      
+      @keyframes popup {
+        from {
+          opacity: 0;
+        }
+        to { 
+          opacity: 1;
+        }
+      }
+
+
+    
+    /* 414 download button + popup */
+
+    .downloadbtnApp{
+        background-color:#025949;
+        border: none;
+        color: #EEEEE1;
+        padding: 0 12px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 auto;
+        font-size: 16px;
+        font-family: Geologica;
+        border-radius: 50px;
+        line-height: 2.5em;
+        margin-top: 20px;
+        margin-bottom: 22px;
+
+        width: 200px;
+    
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+
+    .downloadbtnApp:hover {
+        background-color: #EEEEE1;
+        color:#025949;
+      }
+
+
+      .popupApp {
+        display: none;
+        position: fixed;
+        z-index: 4;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.4);
+      }
+      
+      .popcardApp {
+        display: block;
+        background-color:#EEEEE1;
+        color:#025949;
+        line-height: 1.3em;
+        text-align: left;
+        font-weight: bold;
+        border-radius: 20px;
+        margin: 25% auto;
+        padding: 40px;
+        width: 50%;
+        text-align: center;
+        font-size: 1.3rem;
+        box-shadow: 0 2px 15px 0 black;
+        animation: popup 0.5s;
+      }
+
+      .popcardApp h2{
+        display: block;
+      }
+    
+      .popcardApp img{
+        display: block;
+        margin: 0 auto;
+      }
+      
+      @keyframes popupApp {
+        from {
+          opacity: 0;
+        }
+        to { 
+          opacity: 1;
+        }
+      }
+
+    
+    
+
+    /* dropdown menu */
+
+    .menu-toggle{
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .headerlogo{
+        margin: 0 auto;
+        margin-left: 56px;
+        margin-bottom: 14px;
+        width: 54%;
+
+        /* width: 60%; */
+
+        /* padding-right: 20px; */
+    }
+
+    header li{
+        margin: 10px auto;
+        font-size: 20px;
+    }
+
+    header li:nth-child(1){
+        margin-left: 0;
+    } 
+
+    .hamburger::after, .hamburger::before{
+        width: 30px;
+    }
+
+    .hamburger{
+        width: 30px;
+    }
+
+    .menu a{
+        margin: 0 auto;
+    }
+
+    /* footer */
+
+    .footer{
+        width: 100%;
+        bottom: 0;
+        height: 50px;
+    }
+    
+    .kindfoodlogo img{
+        width: 36%;
+        margin-bottom: 5px;
+    }
+    
+    .kindfoodlogo p{
+        line-height: 1.4;
+        margin-right: 48px;
+    }
+
+}
+
