@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kind Food Homepage</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/component.css">
+    <link rel="stylesheet" href="/css/index_rwd.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@200&family" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
  
 </head>
 
@@ -19,7 +24,7 @@
       <header class="outer">
 
 
-    <!-- download button link to popup message -->
+    <!-- 1920 download button link to popup message -->
 
 
             <button id="popupbtn" class="downloadbtn">Download App</button>
@@ -30,6 +35,7 @@
                     <img src="img/qrcode.svg" alt="">
                 </div>
             </div>
+
 
         <!-- Three Nav Items -->
 
@@ -47,6 +53,35 @@
             </a>
         </div>
 
+        <!-- Dropdown Menu -->
+
+        <div class="menu-toggle">
+            <a class="hamburger">
+                <!-- <i class="fa-solid fa-bars" style="color: #025a49;"></i> -->
+            </a>
+            </div>
+      
+            <ul class="menu">
+            <a href="index.html"><li>User</li></a>
+            <a href="business.html"><li>Business</li></a>
+            <a href="location.html"><li>Location</li></a>
+            <a href="blog.html"><li>Blog</li></a>
+            <a href="faq.html"><li>FAQs</li></a>
+            <button class="downloadbtnApp">Download App</button>
+            </ul>
+
+            <!-- 414 Download button app popup message -->
+
+            <div class="popupApp">
+                <div class="popcardApp">
+                    <h2>Download on App Store<br>and Google Play by<br>scanning the QR code.</h2>
+                    <img src="img/qrcode.svg" alt="">
+                </div>
+            </div>
+
+
+            <!-- Toggle for User and Business -->
+
             <div class="switches-container">
               <input type="radio" id="switchUser" name="switchName" value="User" checked="checked" />
               <input type="radio" id="switchBusiness" name="switchName" value="Business" />
@@ -63,22 +98,45 @@
         </div>
     </header>
 
-    <!--------- 第一區塊（首圖+按鈕） ------->
+    <!--------- Section One 第一區塊（首圖+按鈕） ------->
 
-    <div class="sectionOne">
-
-        <div class="sectionOneText">
-            <h1>Be Kind.<br>Eat Kind Food.</h1>
-
-            <a href="location.html">
-                <button onclick="href='#';" class="explorebtn">Explore Kind Food Nearby</button>
-            </a>
-        </div>
-        
-        <div>
-            <img src="img/hp_01.png" alt="">
+    <div class='cristalBall'>
+        <div class='cristal'>
+            <div class='ball'>
+                
+                <section>
+                    <div class="sectionOne">
+                        <div class="sectionOneText">
+                            <h1>Be Kind.<br>Eat Kind Food.</h1>
+                            <a href="location.html"><button onclick="href='#';" class="explorebtn">Explore Kind Food</button></a>
+                        </div>
+                    
+                        <div>
+                            <img src="img/hp_01.png" alt="">
+                        </div>
+                    </div>   
+                  </section>
+                
+            </div>
         </div>
     </div>
+
+
+    <div class="background">
+        <div class="circle">
+            <div class="circle1">
+                <div class="circle2">
+                    <div class="circle3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+          
+
+    
 
     <!------------- 第二區塊（Delicious Solution） ---------->
 
@@ -92,7 +150,7 @@
                 Delicious Solutions<br>  
                 to Reduce Food Waste!</h2>
             <h3>Our Mission</h3>
-            <p>Welcome to Kind Food, where we believe in making a <br> positive impact on the world through delicious solutions. <br> We are on a mission to tackle the global food waste <br> problem, one plate at a time. Join us in creating a kinder,<br> more sustainable future for all.</p>
+            <p>Welcome to Kind Food, where we believe in making a positive impact on the world through delicious solutions. We are on a mission to tackle the global food waste problem, one plate at a time. Join us in creating a kinder,more sustainable future for all.</p>
 
             <!-- download button + popup message -->
             
@@ -113,21 +171,21 @@
     <div class="iconSection">
         <ul>
             <li>
-                <img src="img/hp_icon01.png" alt="">
+                <img src="img/hp_icon01.gif" alt="">
                 <h1>4.5M</h1>
                 <p>Users of the Kind Food App</p>
             </li>
 
 
             <li>
-                <img src="img/hp_icon02.png" alt="">
-                <h1>10.250</h1>
+                <img src="img/hp_icon02.gif" alt="">
+                <h1 class="iconTwoText">10.250</h1>
                 <p>Active Businesses on the platform</p>
             </li>
 
 
             <li>
-                <img src="img/hp_icon03.png" alt="">
+                <img src="img/hp_icon03.gif" alt="">
                 <h1>6M</h1>
                 <p>Foodie bags saved and counting</p>
             </li>
@@ -145,11 +203,11 @@
             <img id="pic"src="img/hp_03.png" alt="" >
             <img id="number" src="img/one.png" alt="" >
             <h1>Download App</h1>
-            <p>Open the app and search for Foodie Bags <br>
+            <p>Open the app and search for Foodie Bags
             from restaurants and shops near you.</p>
         
             <h2>What is Foodie Bag?</h2>
-            <p>Foodie Bags are bags of food that are <br> packed randomly by our partnered  <br>restaurants. Even though every Foodie <br> Bag is a surprise, you can get an idea of <br>what you may get from the comments <br> and pictures other users posts. </p>
+            <p class="stepOne-secondP">Foodie Bags are bags of food that are packed randomly by our partnered restaurants. Even though every Foodie Bag is a surprise, you can get an idea of what you may get from the comments and pictures other users posts. </p>
         </div>
 
 
@@ -157,10 +215,10 @@
             <img id="pictwo" src="img/hp_04.png" alt="">
             <img id="numbertwo" src="img/two.png" alt="">
             <h1>Reserve Foodie Bags</h1>
-            <p>Find a restaurant and click on the “Reserve” button. <br>The page will show the  possible pickup time for you<br> to choose from.</p>
+            <p>Find a restaurant and click on the “Reserve” button. The page will show the  possible pickup time for you to choose from.</p>
 
             <h2>How do I pay?</h2>
-            <p>With our secure and user-friendly payment platform, <br>you can choose from a range of convenient options to <br>complete your transaction. Whether you prefer to use <br> major credit cards, popular digital wallets, or other <br>secure payment  methods, we've got you covered.</p>
+            <p class="stepTwo-secondP">With our secure and user-friendly payment platform, you can choose from a range of convenient options to complete your transaction. Whether you prefer to use major credit cards, popular digital wallets, or other secure payment  methods, we've got you covered.</p>
         </div>
 
 
@@ -168,10 +226,10 @@
             <img id="picthree" src="img/hp_05.png" alt="">
             <img id="numberthree" src="img/three.png" alt="">
             <h1>Pick up Foodie Bags</h1>
-            <p>Once your Foodie Bag is ready, the staff will <br>inform you, and you can    conveniently collect it at <br>the designated pick-up counter or area.</p>
+            <p>Once your Foodie Bag is ready, the staff will inform you, and you can    conveniently collect it at the designated pick-up counter or area.</p>
 
             <h2>What if I cannot pickup in time?</h2>
-            <p>If you know in advance that you won't be able to collect <br>your Foodie Bag as  scheduled, we recommend reaching <br>out to the partnered restaurant or shop. Inform them<br> about the situation and inquire about the possibility of <br>rescheduling  or making alternative arrangements.</p>
+            <p class="stepThree-secondP">If you know in advance that you won't be able to collect your Foodie Bag as  scheduled, we recommend reaching out to the partnered restaurant or shop. Inform them about the situation and inquire about the possibility of rescheduling  or making alternative arrangements.</p>
         </div>
 
 
@@ -179,7 +237,7 @@
             <img id="picfour" src="img/hp_06.png" alt="">
             <img id="numberfour" src="img/four.png" alt="">
             <h1>Enjoy good food<br>while saving the earth!</h1>
-            <p>Take your food to go and enjoy. You've just saved a meal <br>from going to waste and done something good for the planet!</p>
+            <p>Take your food to go and enjoy. You've just saved a meal from going to waste and done something good for the planet!</p>
         </div>
     </div>
 
@@ -303,6 +361,18 @@
 
         <script>
 
+            // 下拉式選單 Dropdown Menu //
+            var menu = document.querySelector(".menu-toggle");
+            var hamburger = document.querySelector(".hamburger");
+            var all = document.querySelector(".menu");
+
+            menu.addEventListener("click", hamburgerMenu);
+
+            function hamburgerMenu() {
+                hamburger.classList.toggle("open");
+                all.classList.toggle("menu-is-open");
+            }
+
             // Header 彈出視窗 Popup Window //
 
             let popup = document.querySelector(".popup"),
@@ -321,7 +391,25 @@
             popup.style.display = "none";
             }
             }
+            
+            // App dropdown menu 彈出視窗 Popup Window //
 
+            let popupApp = document.querySelector(".popupApp"),
+                downloadbtnApp = document.querySelector(".downloadbtnApp");
+
+            downloadbtnApp.addEventListener("click", openPopUp);
+
+            function openPopUp(){
+            popupApp.style.display = "Block";
+            }
+
+            window.addEventListener("click", closePopUp);
+
+            function closePopUp(e){
+            if(e.target == popupApp) {
+            popupApp.style.display = "none";
+            }
+            }
             
 
 
