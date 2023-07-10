@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/location.css">
+    <link rel="stylesheet" href="css/location_rwd.css">
+    <link rel="stylesheet" href="css/component.css">
     <title>Locations</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@200&family" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
 
@@ -46,6 +50,34 @@
             </a>
         </div>
 
+            <!-- Dropdown Menu -->
+
+    <div class="menu-toggle">
+        <a class="hamburger">
+            <!-- <i class="fa-solid fa-bars" style="color: #025a49;"></i> -->
+        </a>
+        </div>
+  
+        <ul class="menu">
+        <a href="index.html"><li>User</li></a>
+        <a href="business.html"><li>Business</li></a>
+        <a href="location.html"><li>Location</li></a>
+        <a href="blog.html"><li>Blog</li></a>
+        <a href="faq.html"><li>FAQs</li></a>
+        <button class="downloadbtnApp">Download App</button>
+        </ul>
+
+        <!-- 414 Download button app popup message -->
+
+        <div class="popupApp">
+            <div class="popcardApp">
+                <h2>Download on App Store<br>and Google Play by<br>scanning the QR code.</h2>
+                <img src="img/qrcode.svg" alt="">
+            </div>
+        </div>
+
+        <!-- Toggle for User and Business -->
+        
             <div class="switches-container">
               <input type="radio" id="switchUser" name="switchName" value="User" checked="checked" />
               <input type="radio" id="switchBusiness" name="switchName" value="Business" />
@@ -67,8 +99,24 @@
     <div class="sectionOneOuter">
         <h1>Kind Food</h1>
         <img src="img/locations.svg" alt="">
-        <p>Explore our map, discover our featured partners, and embark on <br> a culinary journey that makes a positive impact on the planet!</p>
-        <img id="googleMap" src="img/googleMap.png" alt="">
+        <p>Explore our map, discover our featured partners, and embark on a culinary journey that makes a positive impact on the planet!</p>
+        <!-- <img id="googleMap" src="img/googleMap.png" alt=""> -->
+
+
+        <div id="googleMapOuter" style="padding-bottom:56.25%; position: relative; display: block; width: 100%"; >
+                <iframe id="googleMap" width="60%" height="50%"
+                src="https://www.google.com/maps/d/u/0/embed?mid=1xyLe0RtGi_trSUGGw2fOa2e3XcOsrL0&ehbc=2E312F" width="640" height="480"
+                frameborder="0" allowfullscreen="" style="position: absolute;"></iframe> 
+          </div>
+
+        <!-- <div id="iframe-rwd">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1xyLe0RtGi_trSUGGw2fOa2e3XcOsrL0&ehbc=2E312F" width="1000" height="500"></iframe>
+        </div> -->
+
+        <!-- <p id="googleMap">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1xyLe0RtGi_trSUGGw2fOa2e3XcOsrL0&ehbc=2E312F" width="1000" height="490"></iframe>
+        </p> -->
+        
 
     </div>
 
@@ -169,7 +217,7 @@
                         <p>American</p>
                     </div>
                     <div class="fratingBox">
-                        <img class="frating" src="img/frating04.svg" alt="">
+                        <img class="frating" src="img/frating02.svg" alt="">
                     </div>
                 </li>
             </a>
@@ -187,7 +235,7 @@
                         <p>Dessert</p>
                     </div>
                     <div class="fratingBox">
-                        <img class="frating" src="img/frating05.svg" alt="">
+                        <img class="frating" src="img/frating02.svg" alt="">
                     </div>
                 </li>
             </a>
@@ -223,7 +271,7 @@
                 <img src="img/fbag08.png" alt=""> 
                 <li>
                     <div class="restaurantTitle">
-                        <h2>The Sweet Oven</h2>
+                        <h2>Sweet Oven</h2>
                         <p>Bakery</p>
                     </div>
                     <div class="fratingBox">
@@ -433,7 +481,23 @@
     </div>
 
 
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false">
+    </script>
+
          <script>
+
+            // 下拉式選單 Dropdown Menu //
+            var menu = document.querySelector(".menu-toggle");
+            var hamburger = document.querySelector(".hamburger");
+            var all = document.querySelector(".menu");
+
+            menu.addEventListener("click", hamburgerMenu);
+
+            function hamburgerMenu() {
+                hamburger.classList.toggle("open");
+                all.classList.toggle("menu-is-open");
+            }
+
 
             // 彈出視窗 Popup Window //
 
@@ -454,6 +518,25 @@
             }
             }
 
+            // App dropdown menu 彈出視窗 Popup Window //
+
+            let popupApp = document.querySelector(".popupApp"),
+                downloadbtnApp = document.querySelector(".downloadbtnApp");
+
+            downloadbtnApp.addEventListener("click", openPopUp);
+
+            function openPopUp(){
+            popupApp.style.display = "Block";
+            }
+
+            window.addEventListener("click", closePopUp);
+
+            function closePopUp(e){
+            if(e.target == popupApp) {
+            popupApp.style.display = "none";
+            }
+            }
+
 
             // 切換按鈕 Switch Function //
 
@@ -466,6 +549,7 @@
             window.open("#", "_new");
             }
             }
+
         </script>
 
 
